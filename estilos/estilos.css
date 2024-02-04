@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=PT+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Kanit:ital,wght@1,300&family=Train+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+.web-container__header {
+  max-width: 100%;
+  min-width: 100%;
+  padding: 0.25rem;
+  margin: -0.7rem auto;
+  justify-content: space-evenly;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9098039216);
+}
+
+.logo__name {
+  font-family: Chewy, Rock Salt, Titan One, Bangers, Rubik Bubbles, Bungee;
+  font-size: 35px;
+  color: #227367;
+  word-spacing: -0.52rem;
+  transition: 2.5s;
+}
+
+.logo__name:hover {
+  color: #50cebb !important;
+  text-shadow: 0.08rem 0.08rem 0 black;
+  padding: 0.18rem;
+  border-radius: 0.45rem;
+  margin: 0.3rem 0 0 0;
+  transition: 2.5s;
+}
+
+.logo__icon {
+  color: #50cebb;
+  margin: 0 0.15rem 0 0;
+  font-size: 35px;
+  transition: 2.5s;
+}
+
+.logo__icon:hover {
+  transition: 2.5s;
+  color: #227367;
+}
+
+.logo__color {
+  font-family: Chewy, Rock Salt, Titan One, Bangers, Rubik Bubbles, Bungee;
+  font-size: 35px;
+  color: #206C61;
+}
+
+.logo__color:hover {
+  color: white !important;
+}
+
+.nav-link__icon {
+  color: #206C61;
+}
+
+.nav-link__item {
+  color: #227367;
+  transform: scale(0.95);
+  transition: 2.5s;
+}
+
+.nav-link__icon:hover {
+  transform: scale(1.15);
+  transition: 2.5s;
+  color: rgba(0, 0, 0, 0.596);
+  padding: 0.35rem;
+  border-radius: 1.2rem;
+}
+
+.navbar__drop-menu {
+  background: linear-gradient(to top, rgba(57, 189, 169, 0.8), rgba(58, 161, 145, 0.8156862745), rgba(41, 147, 131, 0.8235294118), rgba(32, 108, 97, 0.8274509804), rgba(34, 115, 103, 0.8470588235), rgba(13, 99, 86, 0.8431372549), rgba(9, 65, 56, 0.8431372549));
+  box-shadow: 1rem 1rem 0 rgba(32, 108, 97, 0.137254902);
+}
+
+.drop-menu__item {
+  color: white;
+  text-align: center;
+  transform: scale(0.89);
+  transition: 2.5s;
+}
+
+.drop-menu__item:hover {
+  color: rgba(57, 189, 169, 0.8);
+  transform: scale(1.05);
+  transition: 2.5s;
+  text-shadow: 0.05rem 0.05rem 0 #206C61;
+}
+
+.search__input {
+  padding: 0.04rem;
+  font-family: anton;
+  border: 0.12rem solid black;
+  border-radius: 0.25rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.web-container__background-container {
+  width: 100%;
+  height: 600px;
+  min-height: 600px;
+  min-width: 100%;
+}
+
+.webside--contain__banner-image {
+  width: 100%;
+  min-width: 100%;
+  height: 700px;
+  min-height: 700px;
+  background-image: url(../multimedia/imagenes/money-2696219_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.banner-iamge__title {
+  margin-top: 350px;
+  color: rgba(255, 255, 255, 0.6862745098);
+  text-shadow: 0.15rem 0.15rem 0 rgba(0, 0, 0, 0.637);
+  font-family: anton;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.webside__central-title {
+  margin: 1rem 0 0 0;
+}
+
+.central-title__text {
+  font-family: anton;
+  font-size: 30px;
+  color: rgba(32, 108, 97, 0.7176470588);
+  text-shadow: 0.12rem 0.12rem 0 rgba(0, 0, 0, 0.308);
+}
+
+.webside--contain__banner-brand {
+  background-image: url(../multimedia/imagenes/mujer-verde-esmeralda-5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  min-height: 600px;
+  min-width: 100%;
+}
+
+.image-brand__integrator-container {
+  margin-top: 500px;
+}
+
+.image-brand__btn {
+  margin-top: 60px;
+  height: 200px;
+}
+
+.image-brand__title {
+  font-family: anton;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.5803921569);
+}
+
+.btn__button {
+  margin-top: 6rem;
+  padding: 1.3rem;
+  border-radius: 0.65rem;
+  border: solid 0.1rem #fff;
+  color: white;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: Bungee;
+  transition: 500ms;
+  transition: 2.5s;
+  box-shadow: 0 0 1.1rem rgba(0, 0, 0, 0.4941176471);
+}
+
+.btn__button:hover {
+  transition: 500ms;
+  background-color: white;
+  transform: scale(0.85);
+  transition: 2.5s;
+  color: #227367;
+}
+
+.footer__media-icon {
+  font-size: 2rem;
+  color: #227367;
+}
+
+.footer__title {
+  font-family: anton;
+  font-size: 3rem;
+}
+
+.image__brand-img {
+  width: 12rem;
+  height: 12rem;
+}
+
+.btn__button {
+  background-color: #179A82;
+  color: #fff;
+}
+
+.footer__copy {
+  margin: 1rem 0 0 0;
+  height: 10vh;
+}
+
+.Footer__copy-text {
+  color: #202020;
+  font-size: 23px;
+  font-family: anton;
+  text-decoration: solid;
+}
+
+.web-container__contain-impact {
+  margin: 30rem 0 5rem 0;
+}
+
+.contain-impact__information {
+  font-family: anton;
+  color: #202020;
+}
+
+.contain-impact__infor {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contain-impact__stadistics {
+  border: 0.06rem solid rgba(103, 139, 134, 0.3568627451);
+  padding: 1.5rem;
+}
+
+.contain-impact__number {
+  font-family: anton;
+  font-size: 28px;
+}
+
+.contain-impact__title {
+  font-family: anton;
+  font-size: 18px;
+  color: #227367;
+}
+
+.contain-impact__gallery-container {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0.5rem;
+}
+
+.photo-1 {
+  background-image: url(../multimedia/imagenes/fotos-pixabay/mujer-cafe.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.contain-imapct__description {
+  opacity: 0;
+  transition: 3.5s;
+  margin-top: 150px;
+  height: 350px;
+  background-color: rgba(23, 154, 130, 0.2392156863);
+  padding: 0.25rem;
+}
+
+.contain-imapct__description:hover {
+  opacity: 1;
+  transition: 3.5s;
+}
+
+.containt-impact__name {
+  font-family: anton;
+  font-size: 38px;
+}
+
+.photo-2 {
+  background-image: url(../multimedia/imagenes/fotos-pixabay/negro-elegante.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.photo-3 {
+  background-image: url(../multimedia/imagenes/fotos-pixabay/guitarrista.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.contain-impact__brand {
+  font-family: Chewy, Rock Salt, Titan One, Bangers, Rubik Bubbles, Bungee;
+  font-size: 35px;
+  color: #fff;
+}
+
+.contain-impact__text-banner {
+  background-color: #000000;
+  border: solid 0.5rem #2ed39c;
+  padding: 0.65rem;
+  border-radius: 2rem;
+  box-shadow: 0.6rem 0.6rem 0 rgba(0, 0, 0, 0.1529411765);
+}
+
+.contain-impact__text-sintesis-container {
+  background-image: url(../multimedia/imagenes/bg-mj-222.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contain-impact_sintesis-info {
+  text-align: justify;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.contain-contact__banner {
+  background-image: url(../multimedia/imagenes/eze.ache1994_Make_a_background_of_emerald_green_and_white_it_lo_b35262b5-2ed1-4e15-a6c0-2849eb1483ae.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contain-contact__banner-text__contain {
+  font-family: anton;
+  margin-top: 280px;
+  color: rgba(255, 255, 255, 0.5333333333);
+  text-shadow: 0.85rem 0.85rem 1rem rgba(0, 0, 0, 0.678);
+  font-size: 80px;
+}
+
+.contain-contact__forms-containers {
+  height: 400px;
+  width: 100%;
+  min-width: 100%;
+  justify-content: space-around;
+}
+
+.contain-contact__number-text-email {
+  background-image: url(../multimedia/imagenes/bg-mjney.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+  height: 400px;
+  margin: 1.6rem 0 0 0;
+}
+
+.contain-contact__context {
+  font-family: anton;
+  color: #fff;
+}
+
+.contain-contact__input__container input {
+  border-radius: 50px;
+  text-align: center;
+  font-family: anton;
+  color: #000000;
+  padding: 0.65rem;
+  margin: 0.4rem 0 0.4rem 0;
+}
+
+.contain-contact__banner-mini {
+  background-image: url(../multimedia/imagenes/mujer-verde-esmeralda-2.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+  height: 400px;
+  margin: 1.6rem 0 0 -1rem;
+}
+
+.contain-contact__text-banner-mini h3 {
+  margin-top: 200px;
+}
+
+.contain-contact__terms {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contain-contact__btn {
+  padding: 0.2rem;
+  border-radius: 30px;
+  background-color: #202020;
+  color: white;
+}
+
+.testimonials__primary-title {
+  font-family: anton;
+  color: #000000;
+  text-shadow: 0.21rem 0.21rem 0 rgba(0, 0, 0, 0.3294117647);
+}
+
+.testimonials__gallery-container {
+  height: 100vh;
+  min-height: 100vh;
+  background-color: #179A82;
+  padding: 2rem;
+}
+
+.testimonials__gallery-photo {
+  height: 1000px;
+  width: 100%;
+  border: solid 0.15rem black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo1 {
+  background-image: url(../multimedia/imagenes/fotos-testimonios/barberos.png);
+}
+
+.photo2 {
+  background-image: url(../multimedia/imagenes/fotos-testimonios/tatto.png);
+}
+
+.photo3 {
+  background-image: url(../multimedia/imagenes/fotos-testimonios/chef.png);
+}
+
+.photo4 {
+  background-image: url(../multimedia/imagenes/fotos-testimonios/bakery.png);
+}
+
+.web--container__navbar {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 899px) {
+  .contain-impact_sintesis-info {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 790px) {
+  .contain-contact__forms-containers {
+    display: block;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 560px) {
+  .contain-impact__stadistics {
+    display: none;
+  }
+  .contain-impact__number {
+    display: none;
+  }
+  .contain-impact__title {
+    display: none;
+  }
+  .contain-impact__gallery-container {
+    display: block;
+    height: 100vh;
+  }
+  .contain-impact__gallery {
+    margin: 0.15rem 0 0.15em 0;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1230px) {
+  .header__search {
+    display: none;
+  }
+  .search__input {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1230px) {
+  .logo__name {
+    font-size: 22px;
+  }
+  .logo__icon {
+    font-size: 30px;
+  }
+  .navbar__leaf-bar {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 642px) {
+  .footer__title {
+    font-size: 2rem;
+  }
+  .image__brand-img {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
