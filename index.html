@@ -135,7 +135,121 @@
                     <a class="btn__link" id="btnInvertir" ><button    class="btn__button mt-3">Invertir</button></a>                
                     </div>
                 </article>
-            </figure>
+            </figure> <br> <br> 
+            <!-- inicio de elementos tratados en java Script--------------------------------------------------- -->
+            
+            <section 
+            class="webside--contain__Inputs--JS_Elements class_Css_Special w-100 h-100"  >
+            <div  class="Simulacion-1er-Nivel" hidden>
+                <h4 class="webside--contain__Inputs--JS_P text-center">
+                    ¡Simule su Donacion o su Inversion!
+                </h4>
+                <br>           
+            
+                <form action="" class=" Inputs--JS__form justify-content-center text-center" >
+                    <input type="text" id="ingresar_Nombre" class=" mt-4 Inputs--JS__input text-center"placeholder="Ingrese su Nombre y Apellido" required >
+                    <br>
+                    <br>
+                    <input type="number" id="ingresar_Edad" class=" mb-4 Inputs--JS__input text-center" placeholder="Ingrese su edad" required>
+                    <br>
+                    <br>
+                    <input hidden  type="submit" id="boton_Guardar_Variables" class="mb-4 Inputs--JS__input--submit text-center"> 
+                    <h4 hidden class="mensaje_oculto-menor_edad">
+                        lo lamento eres menor de edad
+                    </h4>
+                </form>
+            </div>
+                <!-- separacion--------------------------------------------------------------------------- -->
+                <section action="" id="rubro_seleccion" class="p-3 Inputs--JS__form justify-content-center text-center mt-4 mb-4" hidden >
+                    <h4 class="text-center d-block" >Vamos a continuar. A continuación, se mostrarán los rubros en los que puedes invertir:</h4>
+                    <br>
+
+                    <div class="links_containers--Commerce mt-4 mb-4">
+                        
+                            <button id="tecnologia_escoger-rubro" class="Inputs--JS__Links">Tecnologia<i class="fa-solid fa-television"></i></button>                           
+                            <button id="musica_escoger-rubro" href="" class="Inputs--JS__Links">Musica <i class="fa-solid fa-music"></i></button>
+                            <button id="cocina_escoger-rubro" href="" class="Inputs--JS__Links">Cocina <i class="fa-solid fa-bowl-food"></i></button>
+                            <button id="construccion_escoger-rubro" href="" class="Inputs--JS__Links">Construccion <i class="fa-solid fa-house-crack"></i></button>
+                            <button id="cine_escoger-rubro" href="" class="Inputs--JS__Links">Cine y Series <i class="fa-solid fa-film"></i></button>
+                            <button id="agricultura_escoger-rubro" href="" class="Inputs--JS__Links">Agricultura <i class="fa-solid fa-cow"></i></button>                            
+                            <br> <hr>
+                    </div> </section>
+
+                <!-- separacion--------------------------------------------------------------------------- -->
+                
+                <div class="d-flex mt-4 mb-4 p-2"  >
+                    
+                <section id="Negocios_Tecnologia" action="" class="links_containers--comerce-tecnologia w-100 " hidden>
+                    <h6 class="text-center">Negocios en el rubro tecnologia:</h6>
+                    <ul>
+                        <li class="d-flex" >
+                            <button id="tecno_1" class="links_containers--busnisses" href="">Casa del Procesador</button> <br><br>
+                            <button id="tecno_2" class="links_containers--busnisses" href="">Tech House</button> <br><br>
+                            <button id="tecno_3" class="links_containers--busnisses" href="">Micro-Develop</button></li>
+                    </ul>
+                </section>
+
+                <section id="Negocios_Musica" action="" class="links_containers--comerce-musica w-100" hidden>
+                    <h6 class="text-center">Negocios en el rubro de la Musica:</h6>
+                    <ul>
+                        <li class="d-flex " ><button class="links_containers--busnisses" href="">Ricardio Moscaner</button> <br><br>
+                            <button class="links_containers--busnisses" href="">Los Caprichosos</button> <br><br>
+                            <button class="links_containers--busnisses" href="">Los Malibu</button></li>
+                    </ul>
+                </section>
+
+                <section id="Negocios_Cocina" action="" class="links_containers--comerce-cocina w-100" hidden>
+                    <h6 class="text-center">Negocios en el rubro de la cocina:</h6>
+                    <ul >
+                        <li class="d-flex" ><button class="links_containers--busnisses" href="">La Lechuga Vegana</button> <br><br>
+                            <button class="links_containers--busnisses" href="">El Choclo Feliz</button> <br><br>
+                            <button class="links_containers--busnisses" href="">La Pasta Flora</button></li>
+                    </ul>
+                </section>            
+                <br> <hr>
+            </div>
+            
+            <div class="d-flex mt-4 mb-4 p-2"  >
+                
+                <!-- separador de elementos -->
+                <section id="Negocios_Construccion" action="" class="links_containers--comerce-construccion w-100" hidden>
+                    <h6 class="text-center">Negocios en el rubro construccion:</h6>
+                    <ul>
+                        <li class="d-flex"><button class="links_containers--busnisses" href="">El Ladrillo Rosa</button> <br><br>
+                            <button class="links_containers--busnisses" href="">Casa del Albañil</button> <br><br>
+                            <button class="links_containers--busnisses" href="">The Brick</button></li>
+                    </ul>
+                </section>
+
+                <section id="Negocios_Cine" action="" class="links_containers--comerce-cine w-100" hidden>
+                    <h6 class="text-center">Negocios en el rubro Cine y Series:</h6>
+                    <ul>
+                        <li  class="d-flex"><button class="links_containers--busnisses" href="">Cuello Cortado</button> <br><br>
+                            <button class="links_containers--busnisses" href="">La Pasion de Lupe</button> <br><br>
+                            <button class="links_containers--busnisses" href="">Amor de Piojos</button></li>
+                    </ul>
+                </section>
+
+                <section id="Negocios_Agro" action="" class="links_containers--comerce-agricultura w-100" hidden>
+                    <h6 class="text-center">Negocios en el rubro Agricultura:</h6>
+                    <ul>
+                        <li class="d-flex"><button class="links_containers--busnisses" href="">La Espiguita</button> <br> <br>
+                            <button class="links_containers--busnisses" href="">Pesticidas Don Chicho</button> <br><br>
+                            <button class="links_containers--busnisses" href="">La Casa de la Oruga</button></li>
+                    </ul>
+                </section>                        
+            </div>
+            <!-- separacion--------------------------------------------------------------------------- -->
+            <section id="escoger_Donar_Invertir" action="" class="links_containers--comerce-invest text-center w-100 mt-4 mb-4" hidden >
+                <br> <hr>
+                <h4 class="text-center">Debes escoger entre donar o Invertir</h4> <br>
+                <div class="">
+                    <button id="Escoger_Invertir_3" href="" class="links-invest-css js_links_containers--comerce-links-invest-selection">Invertir</button>
+                    <button id="Escoger_Donar_4" href="" class="links-invest-css js_links_containers--comerce-links-donation-selection">Donar</button>
+                </div>
+            </section>
+            </section>
+
         </main>
         <hr>
         <footer class="web--container__footer">
@@ -172,6 +286,71 @@
                     Todos los derechos reservados para Halo Give Corp Latin America &copy; 
                 </h6>
             </div>
+
+            
+            <section class="webside__contain__Item-To-Invest text-center d-flex text-white mt-5 w-100 h-100 row">
+                <h3 class="webside__contain__title-invest text-center mt-3 w-100">
+                    ¿En que usamos las Donaciones que recibimos?
+                </h3>
+                <div class="Item-To-Invest__Individual-Items col-2 mt-4 ">
+                    <ul class="Item-To-Invest__Ul-List1">
+                        <li class="Item-To-Invest__Li-List1"><img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/tecnologia.png" alt=""><a class="Item-To-Invest__A-Links text-center" id="Tecnologia_Link" href="">Tecnologia</a></li>
+                    </ul>
+                    <p class="Item-To-Invest_Tecnologia Item-To-Invest_Global-Name w-100 text-center" hidden>
+                        Tecnología: Facilitamos el acceso equitativo a la tecnología y desarrollamos soluciones digitales sostenibles para comunidades desfavorecidas, promoviendo la inclusión digital y el empoderamiento a través de programas de alfabetización digital y el desarrollo de aplicaciones y herramientas tecnológicas.
+                    </p>
+                </div>
+                    <!-- separacion de contenedor -->
+                <div class="Item-To-Invest__Individual-Items col-2 mt-4">
+                    <ul class="Item-To-Invest__Ul-List2">
+                        <li class="Item-To-Invest__Li-List2"><img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/musicos.png" alt=""><a class="Item-To-Invest__A-Links text-center" id="Musica_Link" href="">Musica</a></li>
+                    </ul>
+                    <p class="Item-To-Invest_Musico Item-To-Invest_Global-Name w-100 text-center" hidden>
+                        Música: Apoyamos la educación musical y la diversidad cultural, brindando acceso a instrumentos, clases y oportunidades de participación en grupos musicales para promover la inclusión social y enriquecer la vida de las comunidades a través del poder de la música.
+                    </p>
+                </div>
+                <!-- separacion de contenedor -->
+                <div class="Item-To-Invest__Individual-Items col-2 mt-4">
+                    <ul class="Item-To-Invest__Ul-List2">
+                        <li class="Item-To-Invest__Li-List2"><img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/cocina.png" alt=""><a class="Item-To-Invest__A-Links text-center" id="Cocina_Link" href="">Cocina</a></li>
+                    </ul>
+                    <p class="Item-To-Invest_Cocina Item-To-Invest_Global-Name w-100 text-center" hidden>
+                        Cocina: Impulsamos la nutrición comunitaria y promovemos habilidades culinarias saludables mediante programas que enseñan sobre una alimentación balanceada y sostenible, colaborando con chefs locales y organizaciones para mejorar la salud y el bienestar a través de la cocina.
+                    </p>
+                </div>
+                
+                <!-- separacion de contenedor -->
+                <div class="Item-To-Invest__Individual-Items col-2 mt-4">
+                    <ul class="Item-To-Invest__Ul-List4">
+                        <li class="Item-To-Invest__Li-List4"><img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/construccion.png" alt=""><a class="Item-To-Invest__A-Links text-center" id="Construccion_Link" href="">Construccion</a></li>
+                    </ul>
+                    <p class="Item-To-Invest_Construccion Item-To-Invest_Global-Name w-100 text-center" hidden>
+                        Construcción: Dirigimos recursos hacia proyectos de construcción que impactan positivamente en las comunidades, desde la infraestructura básica como viviendas seguras y carreteras hasta la mejora de servicios como escuelas, centros de salud y espacios comunitarios, promoviendo así el desarrollo humano integral y la prosperidad sostenible.
+                    </p>
+                </div>
+                <!-- separacion de contenedor -->
+                <div class="Item-To-Invest__Individual-Items col-2  mt-4">
+                    <ul class="Item-To-Invest__Ul-List5">
+                        <li class="Item-To-Invest__Li-List5"><img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/cine_y_series.png" alt=""><a class="Item-To-Invest__A-Links text-center" id="Cine_Link" href="">Cine y Series</a></li>
+                    </ul>
+                    <p class="Item-To-Invest_Cine Item-To-Invest_Global-Name w-100 text-center" hidden>
+                        Cine y Series: Dirigimos donaciones hacia la producción audiovisual educativa e inclusiva que promueve la diversidad cultural y social. Financiamos proyectos cinematográficos y series que aborden temas relevantes como la inclusión, la justicia social y los derechos humanos, brindando una plataforma para amplificar voces diversas y empoderar a comunidades marginadas a través del arte y la narrativa.
+                    </p>
+                </div>
+                <!-- separacion de contenedor -->
+                <div class="Item-To-Invest__Individual-Items col-2 mt-4">
+                    <ul class="Item-To-Invest__Ul-List6">
+                        <li class="Item-To-Invest__Li-List6">
+                            <img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/agricultura.png" alt="">
+                            <a class="Item-To-Invest__A-Links  text-center" id="Agricultura_Link" href="#">Agricultura</a>
+                        </li>
+                    </ul>
+                    <p class="Item-To-Invest_Agriculture Item-To-Invest_Global-Name w-100 text-center" hidden>Agricultura: Canalizamos recursos hacia el desarrollo agrícola sostenible, fortaleciendo la seguridad alimentaria en comunidades rurales. Trabajamos en colaboración con agricultores locales para implementar prácticas agrícolas innovadoras, proporcionar acceso a insumos y tecnologías, y ofrecer capacitación en técnicas que aumenten la productividad y la resiliencia frente al cambio climático. Además, promovemos la diversificación de cultivos y la gestión sostenible de recursos naturales para garantizar la autosuficiencia alimentaria y mejorar los medios de vida de las comunidades agrícolas.</p>
+                </div>
+                
+            </section>
+            
+            
         </footer>
         </section>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -182,6 +361,8 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
         <script src="./javascript.js/main.js"></script>
+        <script src="./javascript.js/donaciones_Dom.js"></script>
+        <script src="./javascript.js/main2.js"></script>
 </body>
 
 </html>

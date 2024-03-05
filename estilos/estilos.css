@@ -191,6 +191,56 @@
   color: #227367;
 }
 
+.Inputs--JS__Links {
+  padding: 0.6rem;
+  background-color: #206C61;
+  color: white;
+  border-radius: 2rem;
+  margin: 0.5rem 1rem 0rem 1rem;
+}
+
+.links_containers--busnisses {
+  background-color: #206C61;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+}
+
+.links-invest-css {
+  padding: 0.6rem;
+  background-color: #206C61;
+  color: white;
+  border-radius: 2rem;
+  margin: 0.5rem 1rem 0rem 1rem;
+}
+
+.Item-To-Invest__img {
+  border-radius: 1.15rem;
+  box-shadow: 0.2rem 0.2rem rgba(34, 115, 103, 0.2862745098);
+}
+
+.Item-To-Invest__A-Links {
+  padding: 0.8rem;
+  margin-top: 5px;
+  background: -webkit-repeating-linear-gradient(#179A82, rgba(9, 65, 56, 0.8431372549));
+  display: block;
+  color: white;
+  border-radius: 2rem;
+  transition: 1s;
+}
+
+.Item-To-Invest__A-Links:hover {
+  padding: 0.8rem;
+  margin-top: 5px;
+  background: -webkit-repeating-linear-gradient(white, gray);
+  display: block;
+  color: #179A82;
+  transition: 1s;
+  border-radius: 2rem;
+}
+
 .footer__media-icon {
   font-size: 2rem;
   color: #227367;
