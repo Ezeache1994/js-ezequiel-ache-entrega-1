@@ -284,115 +284,65 @@ const Negocios_Musica_Descripcion=[
 
             //restaurantes disponibles
 
-            const Restaurantes_Disponibles= [
-                {Restaurante:`La Lechuga Vegana`,descripcion:`Restaurante vegano para turistas`},
-                {Restaurante:`El Choclo Feliz`,descripcion:`Restaurante tradicional Salteño`},
-                {Restaurante:`La Pasta Flora`,descripcion:`Restaurante especializado en Pasteleria y Cafe`},
-            ]
-
-
-            //negocio de restauracion #1----------------------------------------------------------------
-
-            const Elegir_Negocio_Especifico_Restaurancion_1 =document.querySelector("#Restaurante_1");
-
-            Elegir_Negocio_Especifico_Restaurancion_1.addEventListener("click",function(event){
-                event.preventDefault();
-                Escoger_Invertir.removeAttribute("hidden")
-
-                //guardar en SessionStorage
-
-                const Restaurante_Elegido1="La Lechuga Vegana";
-                const Restaurante_Escogido1= Restaurantes_Disponibles.find(restaurant=> restaurant.Restaurante===Restaurante_Elegido1);
-
-                if(Restaurante_Escogido1){
-                    sessionStorage.setItem(`Restaurante escogido: ${Restaurante_Escogido1.Restaurante}, se especializa en: ${Restaurante_Escogido1.descripcion}`);
-                    console.log(`Restaurante escogido: ${Restaurante_Escogido1.Restaurante}, se especializa en: ${Restaurante_Escogido1.descripcion}`);
-                };
-            });
-
-
-
-
-            const Elegir_Negocio_especifico_musica_3= document.querySelector("#Musical_3")
-
-            Elegir_Negocio_especifico_musica_3.addEventListener("click",function(event){
+            const Restaurantes_Disponibles = [
+                { Restaurante: `La Lechuga Vegana`, descripcion: `Restaurante vegano para turistas` },
+                { Restaurante: `El Choclo Feliz`, descripcion: `Restaurante tradicional Salteño` },
+                { Restaurante: `La Pasta Flora`, descripcion: `Restaurante especializado en Pasteleria y Cafe` },
+            ];
+            
+            // negocio de restauracion #1----------------------------------------------------------------
+            
+            const Elegir_Negocio_Especifico_Restaurancion_1 = document.querySelector("#Restaurante_1");
+            
+            Elegir_Negocio_Especifico_Restaurancion_1.addEventListener("click", function(event) {
                 event.preventDefault();
                 Escoger_Invertir.removeAttribute("hidden");
-        
-                /* guardar en el sessionStorage */
-        
-                const artistaElegido3=`Los Malibu`;
-                const ArtistaEscogido3= Negocios_Musica_Descripcion.find(artista=>artista.Artista===artistaElegido3);
-        
-                if(ArtistaEscogido3){
-                    sessionStorage.setItem(`Artista escogido:`,`${ArtistaEscogido3.Artista}, el Artista escogido trabaja como:${ArtistaEscogido3.descripcion}`)
-                    console.log(`Artista escogido:`,`${ArtistaEscogido3.Artista}, el Artista escogido trabaja como:${ArtistaEscogido3.descripcion}`);
-                }
+            
+                const Restaurante_Elegido1 = "La Lechuga Vegana";
+                const Restaurante_Escogido1 = Restaurantes_Disponibles.find(restaurant => restaurant.Restaurante === Restaurante_Elegido1);
+            
+                if (Restaurante_Escogido1) {
+                    sessionStorage.setItem(`Restaurante_escogido_3`, `${Restaurante_Escogido1.Restaurante}, se especializa en: ${Restaurante_Escogido1.descripcion}`);
+                    console.log(`Restaurante escogido: ${Restaurante_Escogido1.Restaurante}, se especializa en: ${Restaurante_Escogido1.descripcion}`);
+                };;
             });
+            
+            // negocio de restauracion #2----------------------------------------------------------------
+            
+            const Elegir_Negocio_Especifico_Restaurancion_2 = document.querySelector("#Restaurante_2");
+            
+            Elegir_Negocio_Especifico_Restaurancion_2.addEventListener("click", function(event) {
+                event.preventDefault();
+                Escoger_Invertir.removeAttribute("hidden");
+            
+                const Restaurante_Elegido2 = "El Choclo Feliz";
+                const Restaurante_Escogido2 = Restaurantes_Disponibles.find(restaurant => restaurant.Restaurante === Restaurante_Elegido2);
+            
+                if (Restaurante_Escogido2) {
+                    sessionStorage.setItem(`Restaurante_escogido_3`, `${Restaurante_Escogido2.Restaurante}, se especializa en: ${Restaurante_Escogido2.descripcion}`);
+                    console.log(`Restaurante escogido: ${Restaurante_Escogido2.Restaurante}, se especializa en: ${Restaurante_Escogido2.descripcion}`);
+                };
+            });
+            
+            // negocio de restauracion #3----------------------------------------------------------------
+            
+            const Elegir_Negocio_Especifico_Restaurancion_3 = document.querySelector("#Restaurante_3");
+            
+            Elegir_Negocio_Especifico_Restaurancion_3.addEventListener("click", function(event) {
+                event.preventDefault();
+                Escoger_Invertir.removeAttribute("hidden");
 
-
-
-
-
-
-
-            //negocio de restauracion #2----------------------------------------------------------------
-
-
-
-            //negocio de restauracion #3----------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-/*
-Restaurante_1
-Restaurante_2
-Restaurante_3
-
-*/
-
-
-/* Negocio #2 de musica empieza aqui--------------------------------------------------------------------------------------------------------------------- */
-/*       
-const Elegir_Negocio_especifico_musica_2= document.querySelector("#Musical_2")
-
-Elegir_Negocio_especifico_musica_2.addEventListener("click",function(event){
-    event.preventDefault();
-    Escoger_Invertir.removeAttribute("hidden");
-
-    /* guardar en el sessionStorage 
-
-    const artistaElegido2=`Los Caprichosos`;
-    const ArtistaEscogido2= Negocios_Musica_Descripcion.find(artista=>artista.Artista===artistaElegido2);
-
-    if(ArtistaEscogido2){
-        sessionStorage.setItem(`Artista escogido:`,`${ArtistaEscogido2.Artista}, el Artista escogido trabaja como: ${ArtistaEscogido2.descripcion}`)
-        console.log(`Artista escogido:`,`${ArtistaEscogido2.Artista}, el Artista escogido trabaja como: ${ArtistaEscogido2.descripcion}`);
-    }
-});
-*/
-
-
-
-            //const Escoger_Invertir=document.querySelector("#escoger_Donar_Invertir");
+                //guardar aen 
+            
+                const Restaurante_Elegido3 = "La Pasta Flora";
+                const Restaurante_Escogido3 = Restaurantes_Disponibles.find(restaurant => restaurant.Restaurante === Restaurante_Elegido3);
+            
+                if (Restaurante_Escogido3) {
+                    sessionStorage.setItem(`Restaurante_escogido_3`, `${Restaurante_Escogido3.Restaurante}, se especializa en: ${Restaurante_Escogido3.descripcion}`);
+                    console.log(`Restaurante escogido: ${Restaurante_Escogido3.Restaurante}, se especializa en: ${Restaurante_Escogido3.descripcion}`);
+                };
+            });
         });
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -420,7 +370,147 @@ Elegir_Negocio_especifico_musica_2.addEventListener("click",function(event){
             }; 
             //const Escoger_Invertir=document.querySelector("#escoger_Donar_Invertir");
 
+            //restaurantes disponibles
+
+            const Constructora_Disponible = [
+                { Constructora: `El Ladrillo Rosa`, descripcion: `Empresa Contratista de Construccion de Hogares` },
+                { Constructora: `Casa del Albañil`, descripcion: `Distribuidora de cemento y materiales de construccion por delivery` },
+                { Constructora: `The Brick`, descripcion: `Consultora de contratistas Profesionales.` },
+            ];
+            
+            // negocio de restauracion #1----------------------------------------------------------------
+            
+            const Elegir_Negocio_Especifico_Construccion_1 = document.querySelector("#Obra_1");
+            
+            Elegir_Negocio_Especifico_Construccion_1.addEventListener("click", function(event) {   /* el codigo termino aqui */
+                event.preventDefault();
+                Escoger_Invertir.removeAttribute("hidden");
+            
+                const Constructora_Elegida1 = "El Ladrillo Rosa";
+                const Constructora_Escogido1 = Constructora_Disponible.find(constructor => restaurant.Restaurante === Restaurante_Elegido1);
+            
+                if (Restaurante_Escogido1) {
+                    sessionStorage.setItem(`Restaurante_escogido_3`, `${Restaurante_Escogido1.Restaurante}, se especializa en: ${Restaurante_Escogido1.descripcion}`);
+                    console.log(`Restaurante escogido: ${Restaurante_Escogido1.Restaurante}, se especializa en: ${Restaurante_Escogido1.descripcion}`);
+                };;
+            });
+            
+            // negocio de restauracion #2----------------------------------------------------------------
+            
+            const Elegir_Negocio_Especifico_Construccion_2 = document.querySelector("#Obra_2");
+            
+            Elegir_Negocio_Especifico_Restaurancion_2.addEventListener("click", function(event) {
+                event.preventDefault();
+                Escoger_Invertir.removeAttribute("hidden");
+            
+                const Restaurante_Elegido2 = "El Choclo Feliz";
+                const Restaurante_Escogido2 = Restaurantes_Disponibles.find(restaurant => restaurant.Restaurante === Restaurante_Elegido2);
+            
+                if (Restaurante_Escogido2) {
+                    sessionStorage.setItem(`Restaurante_escogido_3`, `${Restaurante_Escogido2.Restaurante}, se especializa en: ${Restaurante_Escogido2.descripcion}`);
+                    console.log(`Restaurante escogido: ${Restaurante_Escogido2.Restaurante}, se especializa en: ${Restaurante_Escogido2.descripcion}`);
+                };
+            });
+            
+            // negocio de restauracion #3----------------------------------------------------------------
+            
+            const Elegir_Negocio_Especifico_Construccion_3 = document.querySelector("#Obra_3");
+            
+            Elegir_Negocio_Especifico_Restaurancion_3.addEventListener("click", function(event) {
+                event.preventDefault();
+                Escoger_Invertir.removeAttribute("hidden");
+
+                //guardar aen 
+            
+                const Restaurante_Elegido3 = "La Pasta Flora";
+                const Restaurante_Escogido3 = Restaurantes_Disponibles.find(restaurant => restaurant.Restaurante === Restaurante_Elegido3);
+            
+                if (Restaurante_Escogido3) {
+                    sessionStorage.setItem(`Restaurante_escogido_3`, `${Restaurante_Escogido3.Restaurante}, se especializa en: ${Restaurante_Escogido3.descripcion}`);
+                    console.log(`Restaurante escogido: ${Restaurante_Escogido3.Restaurante}, se especializa en: ${Restaurante_Escogido3.descripcion}`);
+                };
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         /*-------------------------------CINE---------------------------------------- */
         const Elegir_Rubro_De_Cine=document.querySelector("#cine_escoger-rubro");
