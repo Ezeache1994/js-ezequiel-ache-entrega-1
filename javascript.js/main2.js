@@ -50,13 +50,12 @@ Boton_Continuar1.addEventListener("click", function(event) {
 
     /* segunda simulacion inicio --------------------------------------------------------------------------------------------------------- */
     
-    segundaSimulacion.addEventListener("click",function(event){
+    segundaSimulacion.addEventListener("click",function(event){ /* segunda simulacion inicio de la logica entera */
         event.preventDefault();
         elegirRubro.removeAttribute("hidden");
 
-        /*-------------------------------TECNOLOGIA---------------------------------------- */
 
-        /*separador de logica------------------------------------------------------------- */
+        /* variables para trabajar con el DOM */
         
         const Elegir_Rubro_De_Tecnologia=document.querySelector("#tecnologia_escoger-rubro");
         const Escoger_Negocios_Tecnologia=document.querySelector("#Negocios_Tecnologia");
@@ -65,7 +64,16 @@ Boton_Continuar1.addEventListener("click", function(event) {
         const Escoger_Invertir=document.querySelector("#escoger_Donar_Invertir");
         /* escoger Donar o Invertir */
 
-        Elegir_Rubro_De_Tecnologia.addEventListener("click",function(event){
+         /* variables para trabajar con el DOM */
+
+
+                /*-------------------------------TECNOLOGIA---------------------------------------- */
+
+        /*separador de logica------------------------------------------------------------- */
+
+
+
+        Elegir_Rubro_De_Tecnologia.addEventListener("click",function(event){ /* inicio de la funcion Elegir_Rubro_De_Tecnologia  */  
             event.preventDefault();
             Escoger_Negocios_Tecnologia.removeAttribute("hidden");
 
@@ -81,51 +89,79 @@ Boton_Continuar1.addEventListener("click", function(event) {
             };
             
             
-            /*escoger negocio*/
-            const Negocios_Tecnologia_descripcion = [
-                { Negocio: "Casa del Procesador", descripcion: "Fabrica de Procesadores" },
-                { Negocio: "Tech House", descripcion: "Negocio de fabricacion de Hardware industrial" },
-                { Negocio: "Micro-Develop", descripcion: "Consultora de desarrollo y programacion" }
-            ];
+            /*escoger negocio de tecnologia--------------------------------------------------------------------------*/
+const Negocios_Tecnologia_descripcion = [
+    { Negocio: "Casa del Procesador", descripcion: "Fabrica de Procesadores" },
+    { Negocio: "Tech House", descripcion: "Negocio de fabricacion de Hardware industrial" },
+    { Negocio: "Micro-Develop", descripcion: "Consultora de desarrollo y programacion" }
+];
+
+/* Negocio #1 de tecnologia empieza aqui */
+const Elegir_Negocio_especifico_tecnologia_1 = document.querySelector("#tecno_1");
+
+Elegir_Negocio_especifico_tecnologia_1.addEventListener("click", function(event) {
+    event.preventDefault();
+    Escoger_Invertir.removeAttribute("hidden");
+
+    const negocioElegido1 = "Casa del Procesador";
+    const negocioTecnologicoEscogido1 = Negocios_Tecnologia_descripcion.find(negocio => negocio.Negocio === negocioElegido1);
+
+    if (negocioTecnologicoEscogido1) {
+        sessionStorage.setItem("negocio_escogido_tecnologia", `${negocioTecnologicoEscogido1.Negocio}: ${negocioTecnologicoEscogido1.descripcion}`);
+        console.log(`Negocio escogido: ${negocioTecnologicoEscogido1.Negocio}, El negocio se dedica a: ${negocioTecnologicoEscogido1.descripcion}`);
+    }
+});
+
+/* Negocio #2 de tecnologia empieza aqui */
+const Elegir_Negocio_especifico_tecnologia_2 = document.querySelector("#tecno_2");
+
+Elegir_Negocio_especifico_tecnologia_2.addEventListener("click", function(event) {
+    event.preventDefault();
+    Escoger_Invertir.removeAttribute("hidden");
+
+    const negocioElegido2 = "Tech House";
+    const negocioTecnologicoEscogido2 = Negocios_Tecnologia_descripcion.find(negocio => negocio.Negocio === negocioElegido2);
+
+    if (negocioTecnologicoEscogido2) {
+        sessionStorage.setItem("negocio_escogido_tecnologia", `${negocioTecnologicoEscogido2.Negocio}: ${negocioTecnologicoEscogido2.descripcion}`);
+        console.log(`Negocio escogido: ${negocioTecnologicoEscogido2.Negocio}, El negocio se dedica a: ${negocioTecnologicoEscogido2.descripcion}`);
+    }
+});
+
+/* Negocio #3 de tecnologia empieza aqui */
+const Elegir_Negocio_especifico_tecnologia_3 = document.querySelector("#tecno_3");
+
+Elegir_Negocio_especifico_tecnologia_3.addEventListener("click", function(event) {
+    event.preventDefault();
+    Escoger_Invertir.removeAttribute("hidden");
+
+    const negocioElegido3 = "Micro-Develop";
+    const negocioTecnologicoEscogido3 = Negocios_Tecnologia_descripcion.find(negocio => negocio.Negocio === negocioElegido3);
+
+    if (negocioTecnologicoEscogido3) {
+        sessionStorage.setItem("negocio_escogido_tecnologia", `${negocioTecnologicoEscogido3.Negocio}: ${negocioTecnologicoEscogido3.descripcion}`);
+        console.log(`Negocio escogido: ${negocioTecnologicoEscogido3.Negocio}, El negocio se dedica a: ${negocioTecnologicoEscogido3.descripcion}`);
+    }
+});
 
 
-            const Elegir_Negocio_especifico_tecnologia_1 = document.querySelector("#tecno_1");
 
 
-            const NegocioElegido1 = "Casa del Procesador";
-            const Negocio_Tecnologico_Escogido1 = Negocios_Tecnologia_descripcion.find(Negocio => Negocio.Negocio === NegocioElegido1);
-            
-            Elegir_Negocio_especifico_tecnologia_1.addEventListener("click", function (event) {
-                event.preventDefault();
-                Escoger_Invertir.removeAttribute("hidden");
-            
-                // Guardar negocio en sessionStorage
-                if (Negocio_Tecnologico_Escogido1) {
-                    sessionStorage.setItem("negocio_escogido", `${Negocio_Tecnologico_Escogido1.Negocio}: ${Negocio_Tecnologico_Escogido1.descripcion}`);
-                    console.log(`Negocio escogido: ${Negocio_Tecnologico_Escogido1.Negocio}, El negocio se dedica a: ${Negocio_Tecnologico_Escogido1.descripcion}`);
-                }
-            });
+/* fin de la funcion Elegir_Rubro_De_Tecnologia  */ 
 
+});
+
+
+        /* Fin de negocios de Tecnologia----------------------------------------------------------------------------------------- */
+
+        /* Fin de negocios de Tecnologia----------------------------------------------------------------------------------------- */
+
+        /* Fin de negocios de Tecnologia----------------------------------------------------------------------------------------- */
+
+        /* Fin de negocios de Tecnologia----------------------------------------------------------------------------------------- */
 
 
 
-            /*escoger especificamente negocio tecnologico 2*/
-            const Elegir_Negocio_especifico_tecnologia_2=document.querySelector("#tecno_2");
-
-        Elegir_Negocio_especifico_tecnologia_2.addEventListener("click",function(event){
-            event.preventDefault();
-            Escoger_Invertir.removeAttribute("hidden");
-        });
-
-        /*escoger especificamente negocio tecnologico 3*/
-        const Elegir_Negocio_especifico_tecnologia_3=document.querySelector("#tecno_3");
-
-        Elegir_Negocio_especifico_tecnologia_3.addEventListener("click",function(event){
-            event.preventDefault();
-            Escoger_Invertir.removeAttribute("hidden");
-        });
-
-        });
 
 
         /*-------------------------------MUSICA---------------------------------------- */
@@ -151,6 +187,77 @@ Boton_Continuar1.addEventListener("click", function(event) {
 
 
 
+const Negocios_Musica_Descripcion=[
+    {Artista:`Ricardio Moscaner`, descripcion:`Cantante de baladas romanticas`},
+    {Artista:`Los Caprichosos`, descripcion:`Banda de Rock nacional`},
+    {Artista:`Los Malibu`, descripcion:`Banda folclorica de Chamame`},
+];
+
+
+            /* Negocio #1 de musica empieza aqui--------------------------------------------------------------------------------------------------------------------- */
+
+    //escoger especificamente negocio musical 1
+
+    const Elegir_Negocio_especifico_musica_1= document.querySelector("#Musical_1")
+
+    Elegir_Negocio_especifico_musica_1.addEventListener("click",function(event){
+        event.preventDefault();
+        Escoger_Invertir.removeAttribute("hidden");
+
+        /* guardar en el sessionStorage */
+
+        const artistaElegido1=`Ricardio Moscaner`;
+        const ArtistaEscogido1= Negocios_Musica_Descripcion.find(artista=>artista.Artista===artistaElegido1);
+
+        if(ArtistaEscogido1){
+            sessionStorage.setItem(`Artista escogido:`,`${ArtistaEscogido1.Artista}, el Artista escogido trabaja como:${ArtistaEscogido1.descripcion}`)
+            console.log(`Artista escogido:`,`${ArtistaEscogido1.Artista}, el Artista escogido trabaja como:${ArtistaEscogido1.descripcion}`);
+        }
+    });
+
+
+            /* Negocio #2 de musica empieza aqui--------------------------------------------------------------------------------------------------------------------- */
+        
+            const Elegir_Negocio_especifico_musica_2= document.querySelector("#Musical_2")
+
+    Elegir_Negocio_especifico_musica_2.addEventListener("click",function(event){
+        event.preventDefault();
+        Escoger_Invertir.removeAttribute("hidden");
+
+        /* guardar en el sessionStorage */
+
+        const artistaElegido2=`Los Caprichosos`;
+        const ArtistaEscogido2= Negocios_Musica_Descripcion.find(artista=>artista.Artista===artistaElegido2);
+
+        if(ArtistaEscogido2){
+            sessionStorage.setItem(`Artista escogido:`,`${ArtistaEscogido2.Artista}, el Artista escogido trabaja como: ${ArtistaEscogido2.descripcion}`)
+            console.log(`Artista escogido:`,`${ArtistaEscogido2.Artista}, el Artista escogido trabaja como: ${ArtistaEscogido2.descripcion}`);
+        }
+    });
+        
+        
+        
+            /* Negocio #3 de musica empieza aqui--------------------------------------------------------------------------------------------------------------------- */
+            const Elegir_Negocio_especifico_musica_3= document.querySelector("#Musical_3")
+
+            Elegir_Negocio_especifico_musica_3.addEventListener("click",function(event){
+                event.preventDefault();
+                Escoger_Invertir.removeAttribute("hidden");
+        
+                /* guardar en el sessionStorage */
+        
+                const artistaElegido3=`Los Malibu`;
+                const ArtistaEscogido3= Negocios_Musica_Descripcion.find(artista=>artista.Artista===artistaElegido3);
+        
+                if(ArtistaEscogido3){
+                    sessionStorage.setItem(`Artista escogido:`,`${ArtistaEscogido3.Artista}, el Artista escogido trabaja como:${ArtistaEscogido3.descripcion}`)
+                    console.log(`Artista escogido:`,`${ArtistaEscogido3.Artista}, el Artista escogido trabaja como:${ArtistaEscogido3.descripcion}`);
+                }
+            });
+
+
+
+
         });
 
         /*-------------------------------COCINA---------------------------------------- */
@@ -161,6 +268,7 @@ Boton_Continuar1.addEventListener("click", function(event) {
         Elegir_Rubro_De_Cocina.addEventListener("click",function(event){
             event.preventDefault();
             Escoger_Negocios_Cocina.removeAttribute("hidden");
+
 
             /*guardar cocina */
             const nombreRubro3 = "cocina"; 
@@ -173,8 +281,123 @@ Boton_Continuar1.addEventListener("click", function(event) {
                 console.log("el rubro seleccionado es: "+rubroSeleccionado3.nombre);
             };
 
+
+            //restaurantes disponibles
+
+            const Restaurantes_Disponibles= [
+                {Restaurante:`La Lechuga Vegana`,descripcion:`Restaurante vegano para turistas`},
+                {Restaurante:`El Choclo Feliz`,descripcion:`Restaurante tradicional Salteño`},
+                {Restaurante:`La Pasta Flora`,descripcion:`Restaurante especializado en Pasteleria y Cafe`},
+            ]
+
+
+            //negocio de restauracion #1----------------------------------------------------------------
+
+            const Elegir_Negocio_Especifico_Restaurancion_1 =document.querySelector("#Restaurante_1");
+
+            Elegir_Negocio_Especifico_Restaurancion_1.addEventListener("click",function(event){
+                event.preventDefault();
+                Escoger_Invertir.removeAttribute("hidden")
+
+                //guardar en SessionStorage
+
+                const Restaurante_Elegido1="La Lechuga Vegana";
+                const Restaurante_Escogido1= Restaurantes_Disponibles.find(restaurant=> restaurant.Restaurante===Restaurante_Elegido1);
+
+                if(Restaurante_Escogido1){
+                    sessionStorage.setItem(`Restaurante escogido: ${Restaurante_Escogido1.Restaurante}, se especializa en: ${Restaurante_Escogido1.descripcion}`);
+                    console.log(`Restaurante escogido: ${Restaurante_Escogido1.Restaurante}, se especializa en: ${Restaurante_Escogido1.descripcion}`);
+                };
+            });
+
+
+
+
+            const Elegir_Negocio_especifico_musica_3= document.querySelector("#Musical_3")
+
+            Elegir_Negocio_especifico_musica_3.addEventListener("click",function(event){
+                event.preventDefault();
+                Escoger_Invertir.removeAttribute("hidden");
+        
+                /* guardar en el sessionStorage */
+        
+                const artistaElegido3=`Los Malibu`;
+                const ArtistaEscogido3= Negocios_Musica_Descripcion.find(artista=>artista.Artista===artistaElegido3);
+        
+                if(ArtistaEscogido3){
+                    sessionStorage.setItem(`Artista escogido:`,`${ArtistaEscogido3.Artista}, el Artista escogido trabaja como:${ArtistaEscogido3.descripcion}`)
+                    console.log(`Artista escogido:`,`${ArtistaEscogido3.Artista}, el Artista escogido trabaja como:${ArtistaEscogido3.descripcion}`);
+                }
+            });
+
+
+
+
+
+
+
+            //negocio de restauracion #2----------------------------------------------------------------
+
+
+
+            //negocio de restauracion #3----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+/*
+Restaurante_1
+Restaurante_2
+Restaurante_3
+
+*/
+
+
+/* Negocio #2 de musica empieza aqui--------------------------------------------------------------------------------------------------------------------- */
+/*       
+const Elegir_Negocio_especifico_musica_2= document.querySelector("#Musical_2")
+
+Elegir_Negocio_especifico_musica_2.addEventListener("click",function(event){
+    event.preventDefault();
+    Escoger_Invertir.removeAttribute("hidden");
+
+    /* guardar en el sessionStorage 
+
+    const artistaElegido2=`Los Caprichosos`;
+    const ArtistaEscogido2= Negocios_Musica_Descripcion.find(artista=>artista.Artista===artistaElegido2);
+
+    if(ArtistaEscogido2){
+        sessionStorage.setItem(`Artista escogido:`,`${ArtistaEscogido2.Artista}, el Artista escogido trabaja como: ${ArtistaEscogido2.descripcion}`)
+        console.log(`Artista escogido:`,`${ArtistaEscogido2.Artista}, el Artista escogido trabaja como: ${ArtistaEscogido2.descripcion}`);
+    }
+});
+*/
+
+
+
             //const Escoger_Invertir=document.querySelector("#escoger_Donar_Invertir");
         });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
         /*-------------------------------CONSTRUCCION---------------------------------------- */
         const Elegir_Rubro_De_Construccion=document.querySelector("#construccion_escoger-rubro");
