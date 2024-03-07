@@ -54,17 +54,17 @@ Boton_Continuar1.addEventListener("click", function(event) {
         event.preventDefault();
         elegirRubro.removeAttribute("hidden");
 
-
-        /* variables para trabajar con el DOM */
+        /* variables para trabajar con el DOM----------------------------------------------------------------------------------------- */
         
         const Elegir_Rubro_De_Tecnologia=document.querySelector("#tecnologia_escoger-rubro");
         const Escoger_Negocios_Tecnologia=document.querySelector("#Negocios_Tecnologia");
         
         /* escoger Donar o Invertir */
         const Escoger_Invertir=document.querySelector("#escoger_Donar_Invertir");
-        /* escoger Donar o Invertir */
+        /* escoger Donar o Invertir */       
 
-         /* variables para trabajar con el DOM */
+         /* variables para trabajar con el DOM------------------------------------------------------------------------------------------------------------ */
+
 
 
                 /*-------------------------------TECNOLOGIA---------------------------------------- */
@@ -96,7 +96,7 @@ const Negocios_Tecnologia_descripcion = [
     { Negocio: "Micro-Develop", descripcion: "Consultora de desarrollo y programacion" }
 ];
 
-/* Negocio #1 de tecnologia empieza aqui */
+/* Negocio #1 de tecnologia empieza aqui------------------------------------------------------------------------------------------------------------- */
 const Elegir_Negocio_especifico_tecnologia_1 = document.querySelector("#tecno_1");
 
 Elegir_Negocio_especifico_tecnologia_1.addEventListener("click", function(event) {
@@ -107,12 +107,14 @@ Elegir_Negocio_especifico_tecnologia_1.addEventListener("click", function(event)
     const negocioTecnologicoEscogido1 = Negocios_Tecnologia_descripcion.find(negocio => negocio.Negocio === negocioElegido1);
 
     if (negocioTecnologicoEscogido1) {
-        sessionStorage.setItem("negocio_escogido_tecnologia", `${negocioTecnologicoEscogido1.Negocio}: ${negocioTecnologicoEscogido1.descripcion}`);
+        sessionStorage.setItem("Negocio tecnolgico escogido:", `${negocioTecnologicoEscogido1.Negocio}: ${negocioTecnologicoEscogido1.descripcion}`);
         console.log(`Negocio escogido: ${negocioTecnologicoEscogido1.Negocio}, El negocio se dedica a: ${negocioTecnologicoEscogido1.descripcion}`);
-    }
+    };
+    
 });
 
-/* Negocio #2 de tecnologia empieza aqui */
+
+/* Negocio #2 de tecnologia empieza aqui--------------------------------------------------------------------------------------------------------------------- */
 const Elegir_Negocio_especifico_tecnologia_2 = document.querySelector("#tecno_2");
 
 Elegir_Negocio_especifico_tecnologia_2.addEventListener("click", function(event) {
@@ -123,15 +125,21 @@ Elegir_Negocio_especifico_tecnologia_2.addEventListener("click", function(event)
     const negocioTecnologicoEscogido2 = Negocios_Tecnologia_descripcion.find(negocio => negocio.Negocio === negocioElegido2);
 
     if (negocioTecnologicoEscogido2) {
-        sessionStorage.setItem("negocio_escogido_tecnologia", `${negocioTecnologicoEscogido2.Negocio}: ${negocioTecnologicoEscogido2.descripcion}`);
+        sessionStorage.setItem("Negocio tecnolgico escogido:", `${negocioTecnologicoEscogido2.Negocio}: ${negocioTecnologicoEscogido2.descripcion}`);
         console.log(`Negocio escogido: ${negocioTecnologicoEscogido2.Negocio}, El negocio se dedica a: ${negocioTecnologicoEscogido2.descripcion}`);
     }
+    Boton_para_Escoger_Invertir.addEventListener("click",function(event){
+        event.preventDefault();
+        Desplegar_monto_Invertir.removeAttribute("hidden")
+    
+    })
 });
 
-/* Negocio #3 de tecnologia empieza aqui */
+
+/* Negocio #3 de tecnologia empieza aqui -------------------------------------------------------------------------------------------------------------------------*/
 const Elegir_Negocio_especifico_tecnologia_3 = document.querySelector("#tecno_3");
 
-Elegir_Negocio_especifico_tecnologia_3.addEventListener("click", function(event) {
+    Elegir_Negocio_especifico_tecnologia_3.addEventListener("click", function(event) {
     event.preventDefault();
     Escoger_Invertir.removeAttribute("hidden");
 
@@ -139,26 +147,31 @@ Elegir_Negocio_especifico_tecnologia_3.addEventListener("click", function(event)
     const negocioTecnologicoEscogido3 = Negocios_Tecnologia_descripcion.find(negocio => negocio.Negocio === negocioElegido3);
 
     if (negocioTecnologicoEscogido3) {
-        sessionStorage.setItem("negocio_escogido_tecnologia", `${negocioTecnologicoEscogido3.Negocio}: ${negocioTecnologicoEscogido3.descripcion}`);
-        console.log(`Negocio escogido: ${negocioTecnologicoEscogido3.Negocio}, El negocio se dedica a: ${negocioTecnologicoEscogido3.descripcion}`);
+        sessionStorage.setItem("Negocio tecnolgico escogido:", `${negocioTecnologicoEscogido3.Negocio}: ${negocioTecnologicoEscogido3.descripcion}`);
+        console.log(`Negocio tecnolgico escogido: ${negocioTecnologicoEscogido3.Negocio}, El negocio se dedica a: ${negocioTecnologicoEscogido3.descripcion}`);
     }
+    Boton_para_Escoger_Invertir.addEventListener("click",function(event){
+        event.preventDefault();
+        Desplegar_monto_Invertir.removeAttribute("hidden")
+    
+    })
+    
 });
 
 
 
 
-/* fin de la funcion Elegir_Rubro_De_Tecnologia  */ 
+
 
 });
 
 
-        /* Fin de negocios de Tecnologia----------------------------------------------------------------------------------------- */
+        
 
-        /* Fin de negocios de Tecnologia----------------------------------------------------------------------------------------- */
 
-        /* Fin de negocios de Tecnologia----------------------------------------------------------------------------------------- */
+/* Fin de negocios de Tecnologia----------------------------------------------------------------------------------------- */
 
-        /* Fin de negocios de Tecnologia----------------------------------------------------------------------------------------- */
+
 
 
 
@@ -172,7 +185,7 @@ Elegir_Negocio_especifico_tecnologia_3.addEventListener("click", function(event)
             event.preventDefault();
             Escoger_Negocios_Musica.removeAttribute("hidden");
 
-            /*guardar Musica*/
+            /*guardar rubro Musica----------------------------------------------------*/
 
             const nombreRubro2 = "musica"; 
 
@@ -255,7 +268,7 @@ const Negocios_Musica_Descripcion=[
                 }
             });
 
-
+            /* Fin de negocios de musica----------------------------------------------------------------------------------------- */
 
 
         });
@@ -270,7 +283,7 @@ const Negocios_Musica_Descripcion=[
             Escoger_Negocios_Cocina.removeAttribute("hidden");
 
 
-            /*guardar cocina */
+            /*guardar rubro cocina ------------------------------------------------------------------------------------------ */
             const nombreRubro3 = "cocina"; 
 
             const rubroSeleccionado3 = rubros.find(rubro => rubro.nombre === nombreRubro3);
@@ -302,7 +315,7 @@ const Negocios_Musica_Descripcion=[
                 const Restaurante_Escogido1 = Restaurantes_Disponibles.find(restaurant => restaurant.Restaurante === Restaurante_Elegido1);
             
                 if (Restaurante_Escogido1) {
-                    sessionStorage.setItem(`Restaurante_escogido_3`, `${Restaurante_Escogido1.Restaurante}, se especializa en: ${Restaurante_Escogido1.descripcion}`);
+                    sessionStorage.setItem(`Restaurante escogido:`, `${Restaurante_Escogido1.Restaurante}, se especializa en: ${Restaurante_Escogido1.descripcion}`);
                     console.log(`Restaurante escogido: ${Restaurante_Escogido1.Restaurante}, se especializa en: ${Restaurante_Escogido1.descripcion}`);
                 };;
             });
@@ -319,7 +332,7 @@ const Negocios_Musica_Descripcion=[
                 const Restaurante_Escogido2 = Restaurantes_Disponibles.find(restaurant => restaurant.Restaurante === Restaurante_Elegido2);
             
                 if (Restaurante_Escogido2) {
-                    sessionStorage.setItem(`Restaurante_escogido_3`, `${Restaurante_Escogido2.Restaurante}, se especializa en: ${Restaurante_Escogido2.descripcion}`);
+                    sessionStorage.setItem(`Restaurante escogido:`, `${Restaurante_Escogido2.Restaurante}, se especializa en: ${Restaurante_Escogido2.descripcion}`);
                     console.log(`Restaurante escogido: ${Restaurante_Escogido2.Restaurante}, se especializa en: ${Restaurante_Escogido2.descripcion}`);
                 };
             });
@@ -338,12 +351,13 @@ const Negocios_Musica_Descripcion=[
                 const Restaurante_Escogido3 = Restaurantes_Disponibles.find(restaurant => restaurant.Restaurante === Restaurante_Elegido3);
             
                 if (Restaurante_Escogido3) {
-                    sessionStorage.setItem(`Restaurante_escogido_3`, `${Restaurante_Escogido3.Restaurante}, se especializa en: ${Restaurante_Escogido3.descripcion}`);
+                    sessionStorage.setItem(`Restaurante escogido:`, `${Restaurante_Escogido3.Restaurante}, se especializa en: ${Restaurante_Escogido3.descripcion}`);
                     console.log(`Restaurante escogido: ${Restaurante_Escogido3.Restaurante}, se especializa en: ${Restaurante_Escogido3.descripcion}`);
                 };
             });
         });
 
+        /* Fin de negocios de cocina----------------------------------------------------------------------------------------- */
 
 
 
@@ -357,7 +371,7 @@ const Negocios_Musica_Descripcion=[
             event.preventDefault();
             Escoger_Negocios_Construccion.removeAttribute("hidden");
 
-            /*guardar Construccion*/
+            /*guardar rubro Construccion*/
 
             const nombreRubro4 = "construccion"; 
 
@@ -368,7 +382,8 @@ const Negocios_Musica_Descripcion=[
                 sessionStorage.setItem("descripcion", rubroSeleccionado4.descripcion);
                 console.log("el rubro seleccionado es: "+rubroSeleccionado4.nombre);
             }; 
-            //const Escoger_Invertir=document.querySelector("#escoger_Donar_Invertir");
+
+
 
             //restaurantes disponibles
 
@@ -378,135 +393,59 @@ const Negocios_Musica_Descripcion=[
                 { Constructora: `The Brick`, descripcion: `Consultora de contratistas Profesionales.` },
             ];
             
-            // negocio de restauracion #1----------------------------------------------------------------
+            // negocio de construccion #1----------------------------------------------------------------
             
             const Elegir_Negocio_Especifico_Construccion_1 = document.querySelector("#Obra_1");
             
-            Elegir_Negocio_Especifico_Construccion_1.addEventListener("click", function(event) {   /* el codigo termino aqui */
+            Elegir_Negocio_Especifico_Construccion_1.addEventListener("click", function(event) {   
                 event.preventDefault();
                 Escoger_Invertir.removeAttribute("hidden");
             
                 const Constructora_Elegida1 = "El Ladrillo Rosa";
-                const Constructora_Escogido1 = Constructora_Disponible.find(constructor => restaurant.Restaurante === Restaurante_Elegido1);
+                const Constructora_Escogido1 = Constructora_Disponible.find(constructor => constructor.Constructora === Constructora_Elegida1);
             
-                if (Restaurante_Escogido1) {
-                    sessionStorage.setItem(`Restaurante_escogido_3`, `${Restaurante_Escogido1.Restaurante}, se especializa en: ${Restaurante_Escogido1.descripcion}`);
-                    console.log(`Restaurante escogido: ${Restaurante_Escogido1.Restaurante}, se especializa en: ${Restaurante_Escogido1.descripcion}`);
+                if (Constructora_Escogido1) {
+                    sessionStorage.setItem(`Empresa Constructora escogida:`, `${Constructora_Escogido1.Constructora}, se especializa en: ${Constructora_Escogido1.descripcion}`);
+                    console.log(`Comercio escogido: ${Constructora_Escogido1.Constructora}, se especializa en: ${Constructora_Escogido1.descripcion}`);
                 };;
             });
             
-            // negocio de restauracion #2----------------------------------------------------------------
+            // negocio de construccion #2----------------------------------------------------------------
             
             const Elegir_Negocio_Especifico_Construccion_2 = document.querySelector("#Obra_2");
             
-            Elegir_Negocio_Especifico_Restaurancion_2.addEventListener("click", function(event) {
+            Elegir_Negocio_Especifico_Construccion_2.addEventListener("click", function(event) {
                 event.preventDefault();
                 Escoger_Invertir.removeAttribute("hidden");
             
-                const Restaurante_Elegido2 = "El Choclo Feliz";
-                const Restaurante_Escogido2 = Restaurantes_Disponibles.find(restaurant => restaurant.Restaurante === Restaurante_Elegido2);
+                const Constructora_Elegida2 = "Casa del Albañil";
+                const  Constructora_Escogido2= Constructora_Disponible.find(constructor => constructor.Constructora === Constructora_Elegida2);
             
-                if (Restaurante_Escogido2) {
-                    sessionStorage.setItem(`Restaurante_escogido_3`, `${Restaurante_Escogido2.Restaurante}, se especializa en: ${Restaurante_Escogido2.descripcion}`);
-                    console.log(`Restaurante escogido: ${Restaurante_Escogido2.Restaurante}, se especializa en: ${Restaurante_Escogido2.descripcion}`);
-                };
+                if (Constructora_Escogido2) {
+                    sessionStorage.setItem(`Empresa Constructora escogida:`, `${Constructora_Escogido2.Constructora}, se especializa en: ${Constructora_Escogido2.descripcion}`);
+                    console.log(`Comercio escogido: ${Constructora_Escogido2.Constructora}, se especializa en: ${Constructora_Escogido2.descripcion}`);
+                };;
             });
             
-            // negocio de restauracion #3----------------------------------------------------------------
+            // negocio de construccion #3----------------------------------------------------------------
             
             const Elegir_Negocio_Especifico_Construccion_3 = document.querySelector("#Obra_3");
             
-            Elegir_Negocio_Especifico_Restaurancion_3.addEventListener("click", function(event) {
+            Elegir_Negocio_Especifico_Construccion_3.addEventListener("click", function(event) {
                 event.preventDefault();
                 Escoger_Invertir.removeAttribute("hidden");
-
-                //guardar aen 
             
-                const Restaurante_Elegido3 = "La Pasta Flora";
-                const Restaurante_Escogido3 = Restaurantes_Disponibles.find(restaurant => restaurant.Restaurante === Restaurante_Elegido3);
+                const Constructora_Elegida3 = "The Brick";
+                const  Constructora_Escogido3= Constructora_Disponible.find(constructor => constructor.Constructora === Constructora_Elegida3);
             
-                if (Restaurante_Escogido3) {
-                    sessionStorage.setItem(`Restaurante_escogido_3`, `${Restaurante_Escogido3.Restaurante}, se especializa en: ${Restaurante_Escogido3.descripcion}`);
-                    console.log(`Restaurante escogido: ${Restaurante_Escogido3.Restaurante}, se especializa en: ${Restaurante_Escogido3.descripcion}`);
-                };
+                if (Constructora_Escogido3) {
+                    sessionStorage.setItem(`Empresa Constructora escogida:`, `${Constructora_Escogido3.Constructora}, se especializa en: ${Constructora_Escogido3.descripcion}`);
+                    console.log(`Comercio escogido: ${Constructora_Escogido3.Constructora}, se especializa en: ${Constructora_Escogido3.descripcion}`);
+                };;
             });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        /* Fin de negocios de construccion----------------------------------------------------------------------------------------- */
 
 
 
@@ -520,7 +459,7 @@ const Negocios_Musica_Descripcion=[
             event.preventDefault();
             Escoger_Negocios_Cine.removeAttribute("hidden");
 
-            /* Guardar cine*/
+            /* Guardar rubro cine*/
             const nombreRubro5 = "cine"; 
 
             const rubroSeleccionado5 = rubros.find(rubro => rubro.nombre === nombreRubro5);
@@ -530,10 +469,71 @@ const Negocios_Musica_Descripcion=[
                 sessionStorage.setItem("descripcion", rubroSeleccionado5.descripcion);
                 console.log("el rubro seleccionado es: "+rubroSeleccionado5.nombre);
             };
-            //const Escoger_Invertir=document.querySelector("#escoger_Donar_Invertir");
 
 
+            
+
+            //peliculas disponibles.
+            const Peliculas_Disponible = [
+                { Titulo_Cinematografico: `Cuello Cortado`, descripcion: `Pelicula de la Mafia Suiza` },
+                { Titulo_Cinematografico: `La Pasion de Lupe`, descripcion: `Pelicula religiosa para ancianos` },
+                { Titulo_Cinematografico: `Amor de Piojos`, descripcion: `Pelicula romantica entre el amor de un gato y un perro`},
+            ];
+            
+            // negocio de cine #1----------------------------------------------------------------
+            
+            const Elegir_Negocio_Especifico_Cine_1 = document.querySelector("#Pelicula_1");
+            
+            Elegir_Negocio_Especifico_Cine_1.addEventListener("click", function(event) {   
+                event.preventDefault();
+                Escoger_Invertir.removeAttribute("hidden");
+            
+                const Peli_Elegida1 = "Cuello Cortado";
+                const Peli_Escogido1 = Peliculas_Disponible.find(peli => peli.Titulo_Cinematografico === Peli_Elegida1);
+            
+                if (Peli_Escogido1) {
+                    sessionStorage.setItem(`Proyecto cinematografico escogido:`, `${Peli_Escogido1.Titulo_Cinematografico}, se especializa en: ${Peli_Escogido1.descripcion}`);
+                    console.log (`Proyecto cinematografico escogido:`, `${Peli_Escogido1.Titulo_Cinematografico}, se especializa en: ${Peli_Escogido1.descripcion}`);
+                };;
+            });
+            
+            // negocio de cine #2----------------------------------------------------------------
+            
+            const Elegir_Negocio_Especifico_Cine_2 = document.querySelector("#Pelicula_2");
+            
+            Elegir_Negocio_Especifico_Cine_2.addEventListener("click", function(event) {
+                event.preventDefault();
+                Escoger_Invertir.removeAttribute("hidden");
+            
+                const Peli_Elegida2 = "La Pasion de Lupe";
+                const  Peli_Escogido2= Peliculas_Disponible.find(peli => peli.Titulo_Cinematografico === Peli_Elegida2);
+            
+                if (Peli_Escogido2) {
+                    sessionStorage.setItem(`Proyecto cinematografico escogido:`, `${Peli_Escogido2.Titulo_Cinematografico}, se especializa en: ${Peli_Escogido2.descripcion}`);
+                    console.log (`Proyecto cinematografico escogido:`, `${Peli_Escogido2.Titulo_Cinematografico}, se especializa en: ${Peli_Escogido2.descripcion}`);
+                };;
+            });
+            
+            // negocio de cine #3----------------------------------------------------------------
+            
+            const Elegir_Negocio_Especifico_Cine_3 = document.querySelector("#Pelicula_3");
+            
+            Elegir_Negocio_Especifico_Cine_3.addEventListener("click", function(event) {
+                event.preventDefault();
+                Escoger_Invertir.removeAttribute("hidden");
+            
+                const Peli_Elegida3 = "Amor de Piojos";
+                const  Peli_Escogido3= Peliculas_Disponible.find(peli => peli.Titulo_Cinematografico === Peli_Elegida3);
+            
+                if (Peli_Escogido3) {
+                    sessionStorage.setItem(`Proyecto cinematografico escogido:`, `${Peli_Escogido3.Titulo_Cinematografico}, se especializa en: ${Peli_Escogido3.descripcion}`);
+                    console.log (`Proyecto cinematografico escogido:`, `${Peli_Escogido3.Titulo_Cinematografico}, se especializa en: ${Peli_Escogido3.descripcion}`);
+                };;
+            });
         });
+            /* Fin de negocios de Cine----------------------------------------------------------------------------------------- */
+
+
 
         /*-------------------------------AGRICULTURA---------------------------------------- */
         const Elegir_Rubro_De_Agro=document.querySelector("#agricultura_escoger-rubro");
@@ -543,7 +543,7 @@ const Negocios_Musica_Descripcion=[
             event.preventDefault();
             Escoger_Negocios_Agro.removeAttribute("hidden");
 
-            /*guardar agricultura*/
+            /*guardar rubro agricultura*/
             const nombreRubro6 = "agricultura"; 
 
             const rubroSeleccionado6 = rubros.find(rubro => rubro.nombre === nombreRubro6);
@@ -554,23 +554,111 @@ const Negocios_Musica_Descripcion=[
                 console.log("el rubro seleccionado es: "+rubroSeleccionado6.nombre);
             }; 
 
-            //const Escoger_Invertir=document.querySelector("#escoger_Donar_Invertir");
 
+            //agricolas disponibles ---------------------------------------------------------------------
+
+            const Proyectos_Agricolas_Disponible = [
+                { Proyectos_Agricolas: `La Espiguita`, descripcion: `Empresa que distribuye semillas por mayor` },
+                { Proyectos_Agricolas: `Pesticidas Don Chicho`, descripcion: `Fabrica que distribuye pesticidas agricoals` },
+                { Proyectos_Agricolas: `La Casa de la Oruga`, descripcion: `Empresa que asesora como cultivar verduras organicas`},
+            ];
+            
+            // negocio de agro #1----------------------------------------------------------------
+            
+            const Elegir_Negocio_Especifico_Agricola_1 = document.querySelector("#Agricultor_1");
+            
+            Elegir_Negocio_Especifico_Agricola_1.addEventListener("click", function(event) {   
+                event.preventDefault();
+                Escoger_Invertir.removeAttribute("hidden");
+            
+                const Agro_Elegido1 = "La Espiguita";
+                const Agro_Escogido1 = Proyectos_Agricolas_Disponible.find(agro => agro.Proyectos_Agricolas === Agro_Elegido1);
+
+            
+                if (Agro_Escogido1) {
+                    sessionStorage.setItem(`Proyecto Agro escogido:`, `${Agro_Escogido1.Proyectos_Agricolas}, se especializa en: ${Agro_Escogido1.descripcion}`);
+                    console.log (`Proyecto Agro escogido:`, `${Agro_Escogido1.Proyectos_Agricolas}, se especializa en: ${Agro_Escogido1.descripcion}`);
+                };;
+            });
+            
+            // negocio de agro #2----------------------------------------------------------------
+            
+            const Elegir_Negocio_Especifico_Agricola_2 = document.querySelector("#Agricultor_2");
+            
+            Elegir_Negocio_Especifico_Agricola_2.addEventListener("click", function(event) {
+                event.preventDefault();
+                Escoger_Invertir.removeAttribute("hidden");
+            
+                const Agro_Elegido2 = "Pesticidas Don Chicho";
+                const Agro_Escogido2 = Proyectos_Agricolas_Disponible.find(agro => agro.Proyectos_Agricolas === Agro_Elegido2);
+
+            
+                if (Agro_Escogido2) {
+                    sessionStorage.setItem(`Proyecto Agro escogido:`, `${Agro_Escogido2.Proyectos_Agricolas}, se especializa en: ${Agro_Escogido2.descripcion}`);
+
+                    console.log (`Proyecto Agro escogido:`, `${Agro_Escogido2.Proyectos_Agricolas_Disponible}, se especializa en: ${Agro_Escogido2.descripcion}`);
+                };;
+
+            });
+            
+            // negocio de agro #3----------------------------------------------------------------
+            
+            const Elegir_Negocio_Especifico_Agricola_3 = document.querySelector("#Agricultor_3");
+            
+            Elegir_Negocio_Especifico_Agricola_3.addEventListener("click", function(event) {
+                event.preventDefault();
+                Escoger_Invertir.removeAttribute("hidden");
+            
+                const   Agro_Elegido3 = "La Casa de la Oruga";
+                const Agro_Escogido3 = Proyectos_Agricolas_Disponible.find(agro => agro.Proyectos_Agricolas === Agro_Elegido3);  
+            
+                if (Agro_Escogido3) {
+                    sessionStorage.setItem(`Proyecto Agro escogido:`, `${Agro_Escogido3.Proyectos_Agricolas}, se especializa en: ${Agro_Escogido3.descripcion}`);
+
+                    console.log (`Proyecto Agro escogido:`, `${Agro_Escogido3.Proyectos_Agricolas}, se especializa en: ${Agro_Escogido3.descripcion}`);
+                };;
+            });
         });
 
+        /* Fin de negocios de Agricultura----------------------------------------------------------------------------------------- */});
 
+       // Manejador de evento para el botón de finalizar transacción
 
+    const Boton_Final_Transaccion = document.querySelector("#Final_De_Transaccion");
 
+Boton_Final_Transaccion.addEventListener("click", function() {
+    let monto_Ingresado = document.querySelector("#Formulario_Monto").value;
+    let Dinero_Donado = parseFloat(monto_Ingresado);
+    let iva = 0.21;
 
+    if (!isNaN(Dinero_Donado) && Dinero_Donado > 0) {
+        let transaccion_Final = Dinero_Donado * iva + Dinero_Donado;
+        
+        // Obtener la selección de rubro y negocio
+        let rubroSeleccionado = sessionStorage.getItem("rubroSeleccionado");
+        let negocioSeleccionado = sessionStorage.getItem("Negocio tecnolgico escogido:");
+        let negocioSeleccionado_Resumen = sessionStorage.getItem("Artista escogido:");
 
+        // Actualizar el contenido de la card de resumen
+        document.getElementById("rubroSeleccionado").textContent = "Rubro seleccionado: " + rubroSeleccionado;
+        document.getElementById("negocioSeleccionado").textContent = "Negocio seleccionado: " + negocioSeleccionado;
+        document.getElementById("negocioSeleccionado").textContent = "Negocio seleccionado: " + negocioSeleccionado_Resumen;
 
+        document.getElementById("montoDonado").textContent = "Monto donado: " + transaccion_Final;
 
-
-
-
-
-
-
-
-    });
+        // Mostrar la card de resumen
+        document.getElementById("resumenSeleccion").removeAttribute("hidden");
+    } else {
+        alert("Por favor, ingresa un monto válido.");
+    }
 });
+
+
+        
+        
+    });
+
+
+
+
+    
