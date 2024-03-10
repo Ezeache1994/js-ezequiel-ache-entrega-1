@@ -241,6 +241,34 @@
   border-radius: 2rem;
 }
 
+.inputs_Containers1 {
+  display: flex;
+}
+
+.inputs_Containers2 {
+  display: flex;
+}
+
+.inputs_Containers3 {
+  display: flex;
+}
+
+.inputs_Containers4 {
+  display: flex;
+}
+
+.Input_Escoger-Rubro {
+  display: flex;
+}
+
+.Input_Escoger-Negocio {
+  display: flex;
+}
+
+.Segundo_Formulario_Inputs {
+  margin-top: 2rem;
+}
+
 .footer__media-icon {
   font-size: 2rem;
   color: #227367;

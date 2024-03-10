@@ -138,127 +138,95 @@
             </figure> <br> <br> 
             <!-- inicio de elementos tratados en java Script--------------------------------------------------- -->
             
-            <section 
-            class="webside--contain__Inputs--JS_Elements class_Css_Special w-100 h-100"  >
-            <div  class="Simulacion-1er-Nivel" hidden>
-                <h4 class="webside--contain__Inputs--JS_P text-center">
-                    ¡Simule su Donacion !
-                </h4>
-                <br>           
+
+            <section hidden id="Todo_Contenido_JS" 
             
-                <form action="" class=" Inputs--JS__form justify-content-center text-center" >
-                    <input type="text" id="ingresar_Nombre" class=" mt-4 Inputs--JS__input text-center"placeholder="Ingrese su Nombre y Apellido" required >
-                    <br>
-                    <br>
-                    <input type="number" id="ingresar_Edad" class=" mb-4 Inputs--JS__input text-center" placeholder="Ingrese su edad" required>
-                    <h5 class=" mt-5 text-center webside--contain__Inputs--JS_P">Rellene su informacion personal y luego presiones ENTER</h5>
-                    <br>
-                    <br>
-                    <input hidden  type="submit" id="boton_Guardar_Variables" class="mb-4 Inputs--JS__input--submit text-center"> 
-                    <h4 hidden class="mensaje_oculto-menor_edad">
-                        lo lamento eres menor de edad
-                    </h4>
-                </form>
-            </div>
-                <!-- separacion--------------------------------------------------------------------------- -->
-                <section action="" id="rubro_seleccion" class="p-3 Inputs--JS__form justify-content-center text-center mt-4 mb-4" hidden >
-                    <h4 class="text-center d-block" >Vamos a continuar. A continuación, se mostrarán los rubros en los que puedes invertir:</h4>
-                    <br>
+            class="webside--contain__Js--Contain  w-100">
+            <h5 class="w-100 text-center">Esta página web simula un sistema de donaciones utilizado para determinar la cantidad de dinero que un emprendedor podría recibir al realizar una donación. La plataforma se utiliza para calcular y proyectar el monto final que el emprendedor podría obtener como resultado de su contribución.</h5>
 
-                    <div class="links_containers--Commerce mt-4 mb-4">
-                        
-                            <button id="tecnologia_escoger-rubro" class="Inputs--JS__Links">Tecnologia<i class="fa-solid fa-television"></i></button>                           
-                            <button id="musica_escoger-rubro" href="" class="Inputs--JS__Links">Musica <i class="fa-solid fa-music"></i></button>
-                            <button id="cocina_escoger-rubro" href="" class="Inputs--JS__Links">Cocina <i class="fa-solid fa-bowl-food"></i></button>
-                            <button id="construccion_escoger-rubro" href="" class="Inputs--JS__Links">Construccion <i class="fa-solid fa-house-crack"></i></button>
-                            <button id="cine_escoger-rubro" href="" class="Inputs--JS__Links">Cine y Series <i class="fa-solid fa-film"></i></button>
-                            <button id="agricultura_escoger-rubro" href="" class="Inputs--JS__Links">Agricultura <i class="fa-solid fa-cow"></i></button>                            
-                            <br> <hr>
-                    </div> </section>
 
-                <!-- separacion--------------------------------------------------------------------------- -->
-                
-                <div class="d-flex mt-4 mb-4 p-2"  >
-                    
-                <section id="Negocios_Tecnologia" action="" class="links_containers--comerce-tecnologia w-100 " hidden>
-                    <h6 class="text-center">Negocios en el rubro tecnologia:</h6>
-                    <ul>
-                        <li class="d-flex" >
-                            <button id="tecno_1" class="links_containers--busnisses" href="">Casa del Procesador</button> <br><br>
-                            <button id="tecno_2" class="links_containers--busnisses" href="">Tech House</button> <br><br>
-                            <button id="tecno_3" class="links_containers--busnisses" href="">Micro-Develop</button></li>
-                    </ul>
-                </section>
 
-                <section id="Negocios_Musica" action="" class="links_containers--comerce-musica w-100" hidden>
-                    <h6 class="text-center">Negocios en el rubro de la Musica:</h6>
-                    <ul>
-                        <li class="d-flex " >
-                            <button id="Musical_1" class="links_containers--busnisses" href="">Ricardio Moscaner</button> <br><br>
-                            <button id="Musical_2" class="links_containers--busnisses" href="">Los Caprichosos</button> <br><br>
-                            <button id="Musical_3" class="links_containers--busnisses" href="">Los Malibu</button></li>
-                    </ul>
-                </section>
-
-                <section id="Negocios_Cocina" action="" class="links_containers--comerce-cocina w-100" hidden>
-                    <h6 class="text-center">Negocios en el rubro de la cocina:</h6>
-                    <ul >
-                        <li class="d-flex" >
-                            <button id="Restaurante_1" class="links_containers--busnisses" href="">La Lechuga Vegana</button> <br><br>
-                            <button id="Restaurante_2" class="links_containers--busnisses" href="">El Choclo Feliz</button> <br><br>
-                            <button id="Restaurante_3" class="links_containers--busnisses" href="">La Pasta Flora</button></li>
-                    </ul>
-                </section>            
-                <br> <hr>
-            </div>
-            
-            <div class="d-flex mt-4 mb-4 p-2"  >
-                
-                <!-- separador de elementos -->
-                <section id="Negocios_Construccion" action="" class="links_containers--comerce-construccion w-100" hidden>
-                    <h6 class="text-center">Negocios en el rubro construccion:</h6>
-                    <ul>
-                        <li class="d-flex">
-                            <button id="Obra_1" class="links_containers--busnisses" href="">El Ladrillo Rosa</button> <br><br>
-                            <button id="Obra_2" class="links_containers--busnisses" href="">Casa del Albañil</button> <br><br>
-                            <button id="Obra_3" class="links_containers--busnisses" href="">The Brick</button></li>
-                    </ul>
-                </section>
-
-                <section id="Negocios_Cine" action="" class="links_containers--comerce-cine w-100" hidden>
-                    <h6 class="text-center">Negocios en el rubro Cine y Series:</h6>
-                    <ul>
-                        <li  class="d-flex">
-                            <button id="Pelicula_1" class="links_containers--busnisses" href="">Cuello Cortado</button> <br><br>
-                            <button id="Pelicula_2" class="links_containers--busnisses" href="">La Pasion de Lupe</button> <br><br>
-                            <button id="Pelicula_3" class="links_containers--busnisses" href="">Amor de Piojos</button></li>
-                    </ul>
-                </section>
-
-                <section id="Negocios_Agro" action="" class="links_containers--comerce-agricultura w-100" hidden>
-                    <h6 class="text-center">Negocios en el rubro Agricultura:</h6>
-                    <ul>
-                        <li class="d-flex">
-                            <button id="Agricultor_1" class="links_containers--busnisses" href="">La Espiguita</button> <br> <br>
-                            <button id="Agricultor_2" class="links_containers--busnisses" href="">Pesticidas Don Chicho</button> <br><br>
-                            <button id="Agricultor_3" class="links_containers--busnisses" href="">La Casa de la Oruga</button></li>
-                    </ul>
-                </section>                        
-            </div>
-            <!-- separacion--------------------------------------------------------------------------- -->
-            <section id="escoger_Donar_Invertir" action="" class="links_containers--comerce-invest text-center w-100 mt-4 mb-4" hidden >
-                <br> <hr>
-                <h4 class="text-center">Cuanto Deseas Donar?</h4> <br>                
-                <div  class="w-100 links_containers--money_Investing text-center d-block justify-content-center mt-5 " >
-                    <forms id="Montos_A_Donar" class="h-100" action="" >
-                        <input id="Formulario_Monto" type="number" placeholder="Monto A Donar">
-                        <button id="Final_De_Transaccion" class="mb-3">Finalizar Transaccion</button>
-                        <h5>Ingresar monto para donacion</h5>
-                    </forms>    
+                <form action="" class=" w-100">
+                    <div class="justify-content-center  w-100 inputs_Containers1 mt-4">
+                    <input placeholder="Ingrese Nombre y Apellido" id="Ingresar_Nombre" type="text" class="webside--contain__js--input">
                 </div>
-            </section>      
+
+                    <div class=" justify-content-center w-100 inputs_Containers2 mt-4">
+                    <input placeholder="Ingresar Edad" id="ingresar__Edad" type="number" class="webside--contain__js--input">
+                </div>
+
+                    <div   class="w-100  mt-4 justify-content-center inputs_Containers3 mb-3">
+                    <input id="Monto__A_Donar" placeholder="Ingresar monto a Donar" type="number" class="webside--contain__js--input">
+                </div> 
+                
+                <div class="inputs_Containers4 justify-content-center mt-4 w-100 inputs_Containers4">
+                    <button id="Boton_Recibir_Datos" class="justify-content-center">Continuar Simulacion</button>
+                    </div>            
+            </form>
+
             
+
+
+            <form id="Segundo_Formulario_Inputs" hidden action="" class="inputs_Containers2--Rubros w-100 mt-3 ">
+
+                <h4 class="text-center">Los rubros Disponibles para invertir son</h4>
+
+                <div  class="mt-5 Rubros_Para_Escoger mb-4 d-flex justify-content-around" id="Muestra_Rubros_Diponibles">
+                    <h4 class="text-center"></h4>
+                    <h4 class="text-center"></h4>
+                    <h4 class="text-center"></h4> 
+                    <h4 class="text-center"></h4>
+                    <h4 class="text-center"></h4>
+                    <h4 class="text-center"></h4> 
+                </div>                
+
+                <section  class="Input_Escoger-Rubro mt-3 justify-content-center mt-4 w-100">
+                    <input id="Input_Rubroz" placeholder="Escoger eL Rubro" type="text">
+                </section>
+
+                <div class="justify-content-center mt-4 w-100 inputs_Containers4">
+                    <button class="justify-content-center" id="Buscar_Rubro">
+                        Buscar Rubro
+                    </button> 
+                </div>     
+                
+                
+
+                <div class="mt-5 Negocios_Para_Escoger mb-4 d-flex justify-content-around" id="Muestra_Negocios_Diponibles">
+                    <h4 hidden class="datos_Negocios text-center"></h4>
+                    <h4 hidden class="datos_Negocios text-center"></h4>
+                    <h4 hidden class="datos_Negocios text-center"></h4> 
+                </div> 
+
+
+
+                <section class="mt-4 w-100">
+                    <input id="Input_Escoger_Negocio" hidden placeholder="Ingresar Negocio" class="datos_Negocios  text-center" type="text">
+                </section>
+
+                <div class="justify-content-center mt-4 w-100 inputs_Containers4">
+                    <button class="justify-content-center" id="Finalizar">
+                        Finalizar Transaccion
+                    </button> 
+                </div>     
+
+
+            </form>      
+
+            <div hidden class="Info_Desde_JS d-flex justify-content-center w-100">
+                <h6 id="Datos_Nombres_De_Js_A_Html" class="Nombre m-3"></h6>
+                <h6 id="Datos_Edad_De_Js_A_Html" class="Edad m-3"></h6>
+                <h6 id="Datos_Monto_De_Js_A_Html" class="Monto m-3"></h6>
+                <h6 id="Dato_Rubro_Seleccionado" class="El_Rubro_html m-3"></h6>                
+            </div>
+                
             </section>
+
+
+
+
+
+            
 
         </main>
         <hr>
@@ -370,9 +338,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-        <script src="./javascript.js/main.js"></script>
+        <!-- <script src="./javascript.js/main.js"></script> -->
         <script src="./javascript.js/donaciones_Dom.js"></script>
-        <script src="./javascript.js/main2.js"></script>
+        <!-- <script src="./javascript.js/main2.js"></script> -->
 </body>
 
 </html>

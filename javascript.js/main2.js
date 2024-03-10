@@ -1,3 +1,4 @@
+
 const inicioSimulacion = document.querySelector("#btnInvertir");
 const firstLevelSimulation = document.querySelector(".Simulacion-1er-Nivel");
 
@@ -128,11 +129,7 @@ Elegir_Negocio_especifico_tecnologia_2.addEventListener("click", function(event)
         sessionStorage.setItem("Negocio tecnolgico escogido:", `${negocioTecnologicoEscogido2.Negocio}: ${negocioTecnologicoEscogido2.descripcion}`);
         console.log(`Negocio escogido: ${negocioTecnologicoEscogido2.Negocio}, El negocio se dedica a: ${negocioTecnologicoEscogido2.descripcion}`);
     }
-    Boton_para_Escoger_Invertir.addEventListener("click",function(event){
-        event.preventDefault();
-        Desplegar_monto_Invertir.removeAttribute("hidden")
     
-    })
 });
 
 
@@ -150,11 +147,7 @@ const Elegir_Negocio_especifico_tecnologia_3 = document.querySelector("#tecno_3"
         sessionStorage.setItem("Negocio tecnolgico escogido:", `${negocioTecnologicoEscogido3.Negocio}: ${negocioTecnologicoEscogido3.descripcion}`);
         console.log(`Negocio tecnolgico escogido: ${negocioTecnologicoEscogido3.Negocio}, El negocio se dedica a: ${negocioTecnologicoEscogido3.descripcion}`);
     }
-    Boton_para_Escoger_Invertir.addEventListener("click",function(event){
-        event.preventDefault();
-        Desplegar_monto_Invertir.removeAttribute("hidden")
-    
-    })
+
     
 });
 
@@ -624,41 +617,36 @@ const Negocios_Musica_Descripcion=[
 
        // Manejador de evento para el botón de finalizar transacción
 
-    const Boton_Final_Transaccion = document.querySelector("#Final_De_Transaccion");
+       const Boton_Final_Transaccion = document.querySelector("#Final_De_Transaccion");
 
-Boton_Final_Transaccion.addEventListener("click", function() {
-    let monto_Ingresado = document.querySelector("#Formulario_Monto").value;
-    let Dinero_Donado = parseFloat(monto_Ingresado);
-    let iva = 0.21;
-
-    if (!isNaN(Dinero_Donado) && Dinero_Donado > 0) {
-        let transaccion_Final = Dinero_Donado * iva + Dinero_Donado;
-        
-        // Obtener la selección de rubro y negocio
-        let rubroSeleccionado = sessionStorage.getItem("rubroSeleccionado");
-        let negocioSeleccionado = sessionStorage.getItem("Negocio tecnolgico escogido:");
-        let negocioSeleccionado_Resumen = sessionStorage.getItem("Artista escogido:");
-
-        // Actualizar el contenido de la card de resumen
-        document.getElementById("rubroSeleccionado").textContent = "Rubro seleccionado: " + rubroSeleccionado;
-        document.getElementById("negocioSeleccionado").textContent = "Negocio seleccionado: " + negocioSeleccionado;
-        document.getElementById("negocioSeleccionado").textContent = "Negocio seleccionado: " + negocioSeleccionado_Resumen;
-
-        document.getElementById("montoDonado").textContent = "Monto donado: " + transaccion_Final;
-
-        // Mostrar la card de resumen
-        document.getElementById("resumenSeleccion").removeAttribute("hidden");
-    } else {
-        alert("Por favor, ingresa un monto válido.");
-    }
-});
+       Boton_Final_Transaccion.addEventListener("click", function() {
+           let monto_Ingresado = document.querySelector("#Formulario_Monto").value;
+           let Dinero_Donado = parseFloat(monto_Ingresado);
+           let iva = 0.21;
+       
+           if (!isNaN(Dinero_Donado) && Dinero_Donado > 0) {
+               let transaccion_Final = Dinero_Donado * iva + Dinero_Donado;
+               
+               // Obtener la selección de rubro y negocio
+               let rubroSeleccionado = sessionStorage.getItem("rubroSeleccionado");
+               let negocioSeleccionado = sessionStorage.getItem("Negocio tecnolgico escogido:");
+               let negocioSeleccionado_Resumen = sessionStorage.getItem("Artista escogido:");
+       
+               // Mostrar alertas con el resumen de la transacción
+            alert("Rubro seleccionado: " + rubroSeleccionado);
+            alert("Negocio seleccionado: " + negocioSeleccionado);
+            alert("Negocio seleccionado: " + negocioSeleccionado_Resumen);
+            alert("Monto donado: " + transaccion_Final);
+       
+               // Mostrar la card de resumen
+               alert("Se ha mostrado el resumen de la transacción.");
+           } else {
+               alert("Por favor, ingresa un monto válido.");
+           }
+       });
+       
 
 
         
         
     });
-
-
-
-
-    
