@@ -191,6 +191,30 @@
   color: #227367;
 }
 
+.boton_simulacion1 {
+  padding: 0.7rem;
+  background-color: #179A82;
+  color: white;
+  font-family: Teko;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  border-radius: 0.8rem;
+  transition: 1.2s;
+  border: black solid 0.2rem;
+}
+
+.boton_simulacion1:hover {
+  padding: 0.7rem;
+  background-color: white;
+  color: #179A82;
+  font-family: Teko;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  border-radius: 0.8rem;
+  transition: 1.2s;
+  border: #179A82 solid 0.2rem;
+}
+
 .Inputs--JS__Links {
   padding: 0.6rem;
   background-color: #206C61;
@@ -267,6 +291,19 @@
 
 .Segundo_Formulario_Inputs {
   margin-top: 2rem;
+}
+
+.Background_JS_Oculto_SCSS {
+  background-image: url(../multimedia/imagenes/olas_back.png);
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.webside__contain__Item-To-Invest {
+  margin-top: 2rem !important;
 }
 
 .footer__media-icon {

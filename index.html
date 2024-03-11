@@ -139,28 +139,27 @@
             <!-- inicio de elementos tratados en java Script--------------------------------------------------- -->
             
 
-            <section hidden id="Todo_Contenido_JS" 
-            
-            class="webside--contain__Js--Contain  w-100">
+            <section   id="Todo_Contenido_JS"             
+            class="webside--contain__Js--Contain  w-100 mt-5">
             <h5 class="w-100 text-center">Esta página web simula un sistema de donaciones utilizado para determinar la cantidad de dinero que un emprendedor podría recibir al realizar una donación. La plataforma se utiliza para calcular y proyectar el monto final que el emprendedor podría obtener como resultado de su contribución.</h5>
 
 
 
                 <form action="" class=" w-100">
                     <div class="justify-content-center  w-100 inputs_Containers1 mt-4">
-                    <input placeholder="Ingrese Nombre y Apellido" id="Ingresar_Nombre" type="text" class="webside--contain__js--input">
+                    <input required placeholder="Ingrese Nombre y Apellido" id="Ingresar_Nombre" type="text" class="webside--contain__js--input">
                 </div>
 
                     <div class=" justify-content-center w-100 inputs_Containers2 mt-4">
-                    <input placeholder="Ingresar Edad" id="ingresar__Edad" type="number" class="webside--contain__js--input">
+                    <input required placeholder="Ingresar Edad" id="ingresar__Edad" type="number" class="webside--contain__js--input">
                 </div>
 
                     <div   class="w-100  mt-4 justify-content-center inputs_Containers3 mb-3">
-                    <input id="Monto__A_Donar" placeholder="Ingresar monto a Donar" type="number" class="webside--contain__js--input">
+                    <input required id="Monto__A_Donar" placeholder="Ingresar monto a Donar" type="number" class="webside--contain__js--input">
                 </div> 
                 
                 <div class="inputs_Containers4 justify-content-center mt-4 w-100 inputs_Containers4">
-                    <button id="Boton_Recibir_Datos" class="justify-content-center">Continuar Simulacion</button>
+                    <button id="Boton_Recibir_Datos" class="boton_simulacion1 justify-content-center">Continuar Simulacion</button>
                     </div>            
             </form>
 
@@ -200,25 +199,95 @@
 
 
 
-                <section class="mt-4 w-100">
-                    <input id="Input_Escoger_Negocio" hidden placeholder="Ingresar Negocio" class="datos_Negocios  text-center" type="text">
+                <section id="Input_De_Negocios"  class="mt-3 justify-content-center mt-4 w-100 d-flex">
+                    <input hidden id="Input_Escoger_Negocio" placeholder="Ingresar Negocio" class="datos_Negocios  text-center" type="text">
                 </section>
-
-                <div class="justify-content-center mt-4 w-100 inputs_Containers4">
-                    <button class="justify-content-center" id="Finalizar">
+                
+                <div id="Contenedor_Fin" class="justify-content-center mt-4 w-100 inputs_Containers4">
+                    <button hidden class="datos_Negocios justify-content-center" id="Finalizar">
                         Finalizar Transaccion
                     </button> 
-                </div>     
+                </div>    
 
 
-            </form>      
-
+            </form>   
+            
+            <section hidden class="Background_JS_Oculto_SCSS" id="Background_JS_Oculto"> 
+            <article class="w-100"> <h1 class="text-center">Resumen de la transaccion</h1></article>
             <div hidden class="Info_Desde_JS d-flex justify-content-center w-100">
-                <h6 id="Datos_Nombres_De_Js_A_Html" class="Nombre m-3"></h6>
+                <h6 id="Datos_Nombres_De_Js_A_Html" class="Nombre m-3"></h6>  
                 <h6 id="Datos_Edad_De_Js_A_Html" class="Edad m-3"></h6>
                 <h6 id="Datos_Monto_De_Js_A_Html" class="Monto m-3"></h6>
-                <h6 id="Dato_Rubro_Seleccionado" class="El_Rubro_html m-3"></h6>                
+                <h6 id="Dato_Rubro_Seleccionado" class="El_Rubro_html m-3"></h6>
+                <h6 id="Datos_Negocio_Seleccionado" class="El_Negocio m-3"></h6>   
             </div>
+            <div  hidden class="agradecimientos_div w-100"><h3 class="text-center agradecimientos_h3 w-100">Gracias por ser parte de HaloGive!</h3></div>
+
+            <section class="webside__contain__Item-To-Invest text-center d-flex text-white mt-5 w-100 h-100 row">
+            <h3 class="webside__contain__title-invest text-center mt-3 w-100">
+                ¿En que usamos las Donaciones que recibimos?
+            </h3>
+            <div class="Item-To-Invest__Individual-Items col-2 mt-4 ">
+                <ul class="Item-To-Invest__Ul-List1">
+                    <li class="Item-To-Invest__Li-List1"><img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/tecnologia.png" alt=""><a class="Item-To-Invest__A-Links text-center" id="Tecnologia_Link" href="">Tecnologia</a></li>
+                </ul>
+                <p class="Item-To-Invest_Tecnologia Item-To-Invest_Global-Name w-100 text-center" hidden>
+                    Tecnología: Facilitamos el acceso equitativo a la tecnología y desarrollamos soluciones digitales sostenibles para comunidades desfavorecidas, promoviendo la inclusión digital y el empoderamiento a través de programas de alfabetización digital y el desarrollo de aplicaciones y herramientas tecnológicas.
+                </p>
+            </div>
+                <!-- separacion de contenedor -->
+            <div class="Item-To-Invest__Individual-Items col-2 mt-4">
+                <ul class="Item-To-Invest__Ul-List2">
+                    <li class="Item-To-Invest__Li-List2"><img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/musicos.png" alt=""><a class="Item-To-Invest__A-Links text-center" id="Musica_Link" href="">Musica</a></li>
+                </ul>
+                <p class="Item-To-Invest_Musico Item-To-Invest_Global-Name w-100 text-center" hidden>
+                    Música: Apoyamos la educación musical y la diversidad cultural, brindando acceso a instrumentos, clases y oportunidades de participación en grupos musicales para promover la inclusión social y enriquecer la vida de las comunidades a través del poder de la música.
+                </p>
+            </div>
+            <!-- separacion de contenedor -->
+            <div class="Item-To-Invest__Individual-Items col-2 mt-4">
+                <ul class="Item-To-Invest__Ul-List2">
+                    <li class="Item-To-Invest__Li-List2"><img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/cocina.png" alt=""><a class="Item-To-Invest__A-Links text-center" id="Cocina_Link" href="">Cocina</a></li>
+                </ul>
+                <p class="Item-To-Invest_Cocina Item-To-Invest_Global-Name w-100 text-center" hidden>
+                    Cocina: Impulsamos la nutrición comunitaria y promovemos habilidades culinarias saludables mediante programas que enseñan sobre una alimentación balanceada y sostenible, colaborando con chefs locales y organizaciones para mejorar la salud y el bienestar a través de la cocina.
+                </p>
+            </div>
+            
+            <!-- separacion de contenedor -->
+            <div class="Item-To-Invest__Individual-Items col-2 mt-4">
+                <ul class="Item-To-Invest__Ul-List4">
+                    <li class="Item-To-Invest__Li-List4"><img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/construccion.png" alt=""><a class="Item-To-Invest__A-Links text-center" id="Construccion_Link" href="">Construccion</a></li>
+                </ul>
+                <p class="Item-To-Invest_Construccion Item-To-Invest_Global-Name w-100 text-center" hidden>
+                    Construcción: Dirigimos recursos hacia proyectos de construcción que impactan positivamente en las comunidades, desde la infraestructura básica como viviendas seguras y carreteras hasta la mejora de servicios como escuelas, centros de salud y espacios comunitarios, promoviendo así el desarrollo humano integral y la prosperidad sostenible.
+                </p>
+            </div>
+            <!-- separacion de contenedor -->
+            <div class="Item-To-Invest__Individual-Items col-2  mt-4">
+                <ul class="Item-To-Invest__Ul-List5">
+                    <li class="Item-To-Invest__Li-List5"><img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/cine_y_series.png" alt=""><a class="Item-To-Invest__A-Links text-center" id="Cine_Link" href="">Cine y Series</a></li>
+                </ul>
+                <p class="Item-To-Invest_Cine Item-To-Invest_Global-Name w-100 text-center" hidden>
+                    Cine y Series: Dirigimos donaciones hacia la producción audiovisual educativa e inclusiva que promueve la diversidad cultural y social. Financiamos proyectos cinematográficos y series que aborden temas relevantes como la inclusión, la justicia social y los derechos humanos, brindando una plataforma para amplificar voces diversas y empoderar a comunidades marginadas a través del arte y la narrativa.
+                </p>
+            </div>
+            <!-- separacion de contenedor -->
+            <div class="Item-To-Invest__Individual-Items col-2 mt-4">
+                <ul class="Item-To-Invest__Ul-List6">
+                    <li class="Item-To-Invest__Li-List6">
+                        <img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/agricultura.png" alt="">
+                        <a class="Item-To-Invest__A-Links  text-center" id="Agricultura_Link" href="#">Agricultura</a>
+                    </li>
+                </ul>
+                <p class="Item-To-Invest_Agriculture Item-To-Invest_Global-Name w-100 text-center" hidden>Agricultura: Canalizamos recursos hacia el desarrollo agrícola sostenible, fortaleciendo la seguridad alimentaria en comunidades rurales. Trabajamos en colaboración con agricultores locales para implementar prácticas agrícolas innovadoras, proporcionar acceso a insumos y tecnologías, y ofrecer capacitación en técnicas que aumenten la productividad y la resiliencia frente al cambio climático. Además, promovemos la diversificación de cultivos y la gestión sostenible de recursos naturales para garantizar la autosuficiencia alimentaria y mejorar los medios de vida de las comunidades agrícolas.</p>
+            </div>
+            
+        </section>
+        </section>
+
+        
+
                 
             </section>
 
@@ -263,71 +332,7 @@
                 <h6 class="Footer__copy-text">
                     Todos los derechos reservados para Halo Give Corp Latin America &copy; 
                 </h6>
-            </div>
-
-            
-            <section class="webside__contain__Item-To-Invest text-center d-flex text-white mt-5 w-100 h-100 row">
-                <h3 class="webside__contain__title-invest text-center mt-3 w-100">
-                    ¿En que usamos las Donaciones que recibimos?
-                </h3>
-                <div class="Item-To-Invest__Individual-Items col-2 mt-4 ">
-                    <ul class="Item-To-Invest__Ul-List1">
-                        <li class="Item-To-Invest__Li-List1"><img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/tecnologia.png" alt=""><a class="Item-To-Invest__A-Links text-center" id="Tecnologia_Link" href="">Tecnologia</a></li>
-                    </ul>
-                    <p class="Item-To-Invest_Tecnologia Item-To-Invest_Global-Name w-100 text-center" hidden>
-                        Tecnología: Facilitamos el acceso equitativo a la tecnología y desarrollamos soluciones digitales sostenibles para comunidades desfavorecidas, promoviendo la inclusión digital y el empoderamiento a través de programas de alfabetización digital y el desarrollo de aplicaciones y herramientas tecnológicas.
-                    </p>
-                </div>
-                    <!-- separacion de contenedor -->
-                <div class="Item-To-Invest__Individual-Items col-2 mt-4">
-                    <ul class="Item-To-Invest__Ul-List2">
-                        <li class="Item-To-Invest__Li-List2"><img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/musicos.png" alt=""><a class="Item-To-Invest__A-Links text-center" id="Musica_Link" href="">Musica</a></li>
-                    </ul>
-                    <p class="Item-To-Invest_Musico Item-To-Invest_Global-Name w-100 text-center" hidden>
-                        Música: Apoyamos la educación musical y la diversidad cultural, brindando acceso a instrumentos, clases y oportunidades de participación en grupos musicales para promover la inclusión social y enriquecer la vida de las comunidades a través del poder de la música.
-                    </p>
-                </div>
-                <!-- separacion de contenedor -->
-                <div class="Item-To-Invest__Individual-Items col-2 mt-4">
-                    <ul class="Item-To-Invest__Ul-List2">
-                        <li class="Item-To-Invest__Li-List2"><img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/cocina.png" alt=""><a class="Item-To-Invest__A-Links text-center" id="Cocina_Link" href="">Cocina</a></li>
-                    </ul>
-                    <p class="Item-To-Invest_Cocina Item-To-Invest_Global-Name w-100 text-center" hidden>
-                        Cocina: Impulsamos la nutrición comunitaria y promovemos habilidades culinarias saludables mediante programas que enseñan sobre una alimentación balanceada y sostenible, colaborando con chefs locales y organizaciones para mejorar la salud y el bienestar a través de la cocina.
-                    </p>
-                </div>
-                
-                <!-- separacion de contenedor -->
-                <div class="Item-To-Invest__Individual-Items col-2 mt-4">
-                    <ul class="Item-To-Invest__Ul-List4">
-                        <li class="Item-To-Invest__Li-List4"><img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/construccion.png" alt=""><a class="Item-To-Invest__A-Links text-center" id="Construccion_Link" href="">Construccion</a></li>
-                    </ul>
-                    <p class="Item-To-Invest_Construccion Item-To-Invest_Global-Name w-100 text-center" hidden>
-                        Construcción: Dirigimos recursos hacia proyectos de construcción que impactan positivamente en las comunidades, desde la infraestructura básica como viviendas seguras y carreteras hasta la mejora de servicios como escuelas, centros de salud y espacios comunitarios, promoviendo así el desarrollo humano integral y la prosperidad sostenible.
-                    </p>
-                </div>
-                <!-- separacion de contenedor -->
-                <div class="Item-To-Invest__Individual-Items col-2  mt-4">
-                    <ul class="Item-To-Invest__Ul-List5">
-                        <li class="Item-To-Invest__Li-List5"><img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/cine_y_series.png" alt=""><a class="Item-To-Invest__A-Links text-center" id="Cine_Link" href="">Cine y Series</a></li>
-                    </ul>
-                    <p class="Item-To-Invest_Cine Item-To-Invest_Global-Name w-100 text-center" hidden>
-                        Cine y Series: Dirigimos donaciones hacia la producción audiovisual educativa e inclusiva que promueve la diversidad cultural y social. Financiamos proyectos cinematográficos y series que aborden temas relevantes como la inclusión, la justicia social y los derechos humanos, brindando una plataforma para amplificar voces diversas y empoderar a comunidades marginadas a través del arte y la narrativa.
-                    </p>
-                </div>
-                <!-- separacion de contenedor -->
-                <div class="Item-To-Invest__Individual-Items col-2 mt-4">
-                    <ul class="Item-To-Invest__Ul-List6">
-                        <li class="Item-To-Invest__Li-List6">
-                            <img class="Item-To-Invest__img img-fluid" src="./multimedia/imagenes/imagenes-rubros/agricultura.png" alt="">
-                            <a class="Item-To-Invest__A-Links  text-center" id="Agricultura_Link" href="#">Agricultura</a>
-                        </li>
-                    </ul>
-                    <p class="Item-To-Invest_Agriculture Item-To-Invest_Global-Name w-100 text-center" hidden>Agricultura: Canalizamos recursos hacia el desarrollo agrícola sostenible, fortaleciendo la seguridad alimentaria en comunidades rurales. Trabajamos en colaboración con agricultores locales para implementar prácticas agrícolas innovadoras, proporcionar acceso a insumos y tecnologías, y ofrecer capacitación en técnicas que aumenten la productividad y la resiliencia frente al cambio climático. Además, promovemos la diversificación de cultivos y la gestión sostenible de recursos naturales para garantizar la autosuficiencia alimentaria y mejorar los medios de vida de las comunidades agrícolas.</p>
-                </div>
-                
-            </section>
-            
+            </div> 
             
         </footer>
         </section>
