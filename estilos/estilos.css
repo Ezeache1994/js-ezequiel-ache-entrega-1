@@ -289,6 +289,61 @@
   display: flex;
 }
 
+.previa {
+  font-family: anton;
+  padding: 0.8rem;
+}
+
+.Previa_Donaciones {
+  font-family: Anton;
+  color: #179A82;
+}
+
+.ls_rubros {
+  font-family: Anton;
+  color: #179A82;
+}
+
+.webside--contain__js--input {
+  font-family: Anton;
+  text-align: center !important;
+  width: 27%;
+  color: #179A82 !important;
+  border-radius: 0.5rem;
+}
+
+.inputs_Containers2--Rubros {
+  margin-top: 2rem;
+}
+
+.rubros_desde_Js_CSS {
+  font-family: Anton;
+  padding: 1rem;
+  background-color: rgba(23, 154, 130, 0.8352941176);
+  border: #000000, solid, 0.7rem;
+  border-radius: 0.6rem;
+}
+
+.datos_Negocios_Para_Css {
+  font-family: Anton;
+  padding: 1rem;
+  background-color: rgba(23, 154, 130, 0.8352941176);
+  border: #000000, solid, 0.7rem;
+  border-radius: 0.6rem;
+}
+
+.er_Formulario {
+  font-family: Anton;
+  text-align: center !important;
+  width: 27%;
+  color: #179A82 !important;
+  border-radius: 0.5rem;
+}
+
+.info_global_css_resumen {
+  font-family: anton;
+}
+
 .Segundo_Formulario_Inputs {
   margin-top: 2rem;
 }

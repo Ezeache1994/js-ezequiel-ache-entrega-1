@@ -139,23 +139,23 @@
             <!-- inicio de elementos tratados en java Script--------------------------------------------------- -->
             
 
-            <section   id="Todo_Contenido_JS"             
+            <section hidden   id="Todo_Contenido_JS"             
             class="webside--contain__Js--Contain  w-100 mt-5">
-            <h5 class="w-100 text-center">Esta página web simula un sistema de donaciones utilizado para determinar la cantidad de dinero que un emprendedor podría recibir al realizar una donación. La plataforma se utiliza para calcular y proyectar el monto final que el emprendedor podría obtener como resultado de su contribución.</h5>
+            <h5 class="w-100 text-center previa">Esta página web simula un sistema de <span class="Previa_Donaciones">DONACIONES</span> utilizado para determinar la cantidad de dinero que un emprendedor podría recibir al realizar una donación. La plataforma se utiliza para <span class="Previa_Donaciones">calcular y proyectar</span>  el monto final que el emprendedor podría obtener como resultado de su contribución.</h5>
 
 
 
-                <form action="" class=" w-100">
+                <form action="" class=" w-100 mb-5">
                     <div class="justify-content-center  w-100 inputs_Containers1 mt-4">
-                    <input required placeholder="Ingrese Nombre y Apellido" id="Ingresar_Nombre" type="text" class="webside--contain__js--input">
+                    <input required placeholder="Ingrese Nombre y Apellido" id="Ingresar_Nombre" type="text" class="webside--contain__js--input text-center">
                 </div>
 
                     <div class=" justify-content-center w-100 inputs_Containers2 mt-4">
-                    <input required placeholder="Ingresar Edad" id="ingresar__Edad" type="number" class="webside--contain__js--input">
+                    <input required placeholder="Ingresar Edad" id="ingresar__Edad" type="number" class="webside--contain__js--input text-center">
                 </div>
 
                     <div   class="w-100  mt-4 justify-content-center inputs_Containers3 mb-3">
-                    <input required id="Monto__A_Donar" placeholder="Ingresar monto a Donar" type="number" class="webside--contain__js--input">
+                    <input required id="Monto__A_Donar" placeholder="Ingresar monto a Donar" type="number" class="webside--contain__js--input text-center">
                 </div> 
                 
                 <div class="inputs_Containers4 justify-content-center mt-4 w-100 inputs_Containers4">
@@ -166,25 +166,25 @@
             
 
 
-            <form id="Segundo_Formulario_Inputs" hidden action="" class="inputs_Containers2--Rubros w-100 mt-3 ">
+            <section id="Segundo_Formulario_Inputs" hidden  class="inputs_Containers2--Rubros w-100 mt-3 ">
 
-                <h4 class="text-center">Los rubros Disponibles para invertir son</h4>
+                <h4 class="text-center ls_rubros mt-3">Los rubros Disponibles para invertir son:</h4>
 
                 <div  class="mt-5 Rubros_Para_Escoger mb-4 d-flex justify-content-around" id="Muestra_Rubros_Diponibles">
-                    <h4 class="text-center"></h4>
-                    <h4 class="text-center"></h4>
-                    <h4 class="text-center"></h4> 
-                    <h4 class="text-center"></h4>
-                    <h4 class="text-center"></h4>
-                    <h4 class="text-center"></h4> 
+                    <h4 class="text-center rubros_desde_Js_CSS"></h4>
+                    <h4 class="text-center rubros_desde_Js_CSS"></h4> 
+                    <h4 class="text-center rubros_desde_Js_CSS"></h4>
+                    <h4 class="text-center rubros_desde_Js_CSS"></h4>
+                    <h4 class="text-center rubros_desde_Js_CSS"></h4>
+                    <h4 class="text-center rubros_desde_Js_CSS"></h4> 
                 </div>                
 
                 <section  class="Input_Escoger-Rubro mt-3 justify-content-center mt-4 w-100">
-                    <input id="Input_Rubroz" placeholder="Escoger eL Rubro" type="text">
+                    <input class="webside--contain__js--input text-center" required id="Input_Rubroz" placeholder="Escoger El Rubro" type="text">
                 </section>
 
                 <div class="justify-content-center mt-4 w-100 inputs_Containers4">
-                    <button class="justify-content-center" id="Buscar_Rubro">
+                    <button class="justify-content-center boton_simulacion1" id="Buscar_Rubro">
                         Buscar Rubro
                     </button> 
                 </div>     
@@ -192,36 +192,38 @@
                 
 
                 <div class="mt-5 Negocios_Para_Escoger mb-4 d-flex justify-content-around" id="Muestra_Negocios_Diponibles">
-                    <h4 hidden class="datos_Negocios text-center"></h4>
-                    <h4 hidden class="datos_Negocios text-center"></h4>
-                    <h4 hidden class="datos_Negocios text-center"></h4> 
+                    <h4 hidden class="datos_Negocios text-center datos_Negocios_Para_Css"></h4> 
+                    <h4 hidden class="datos_Negocios text-center datos_Negocios_Para_Css"></h4>
+                    <h4 hidden class="datos_Negocios text-center datos_Negocios_Para_Css"></h4>
                 </div> 
 
-
+                <section hidden class="datos_Negocios w-100"><h1 class="ls_rubros text-center">Estos son los negocios donde puedes invertir escoge tan solo 1</h1></section>
 
                 <section id="Input_De_Negocios"  class="mt-3 justify-content-center mt-4 w-100 d-flex">
-                    <input hidden id="Input_Escoger_Negocio" placeholder="Ingresar Negocio" class="datos_Negocios  text-center" type="text">
+
+                    <input hidden id="Input_Escoger_Negocio" placeholder="Ingresar Negocio" class="datos_Negocios er_Formulario  text-center" type="text">
                 </section>
                 
                 <div id="Contenedor_Fin" class="justify-content-center mt-4 w-100 inputs_Containers4">
-                    <button hidden class="datos_Negocios justify-content-center" id="Finalizar">
+                    <button hidden class="datos_Negocios boton_simulacion1 justify-content-center" id="Finalizar">
                         Finalizar Transaccion
                     </button> 
                 </div>    
 
 
-            </form>   
+            </section>   
             
-            <section hidden class="Background_JS_Oculto_SCSS" id="Background_JS_Oculto"> 
-            <article class="w-100"> <h1 class="text-center">Resumen de la transaccion</h1></article>
-            <div hidden class="Info_Desde_JS d-flex justify-content-center w-100">
-                <h6 id="Datos_Nombres_De_Js_A_Html" class="Nombre m-3"></h6>  
-                <h6 id="Datos_Edad_De_Js_A_Html" class="Edad m-3"></h6>
-                <h6 id="Datos_Monto_De_Js_A_Html" class="Monto m-3"></h6>
-                <h6 id="Dato_Rubro_Seleccionado" class="El_Rubro_html m-3"></h6>
-                <h6 id="Datos_Negocio_Seleccionado" class="El_Negocio m-3"></h6>   
+            <section hidden class="Background_JS_Oculto_SCSS mt-5" id="Background_JS_Oculto"> 
+            <article class="w-100 mt-5 mb-5 "> <h1 class="text-center">Resumen de la transaccion</h1></article>
+
+            <div hidden class="Info_Desde_JS d-flex justify-content-center w-100 mt-4">
+                <h6 id="Datos_Nombres_De_Js_A_Html" class="info_global_css_resumen Nombre m-3 text-white"></h6>  
+                <h6 id="Datos_Edad_De_Js_A_Html" class="info_global_css_resumen Edad m-3 text-white"></h6>
+                <h6 id="Datos_Monto_De_Js_A_Html" class="info_global_css_resumen Monto m-3 text-white"></h6>
+                <h6 id="Dato_Rubro_Seleccionado" class="info_global_css_resumen El_Rubro_html m-3 text-white"></h6>
+                <h6 id="Datos_Negocio_Seleccionado" class="info_global_css_resumen El_Negocio m-3 text-white"></h6>   
             </div>
-            <div  hidden class="agradecimientos_div w-100"><h3 class="text-center agradecimientos_h3 w-100">Gracias por ser parte de HaloGive!</h3></div>
+            <div  hidden class="agradecimientos_div w-100"><h3 class="text-center agradecimientos_h3 w-100 mt-5 mb-5">Gracias por ser parte de HaloGive!</h3></div>
 
             <section class="webside__contain__Item-To-Invest text-center d-flex text-white mt-5 w-100 h-100 row">
             <h3 class="webside__contain__title-invest text-center mt-3 w-100">
