@@ -7,15 +7,73 @@
     <title>Practicas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./estilos/reset.css">
     <link rel="stylesheet" href="./estilos/estilos.css">
+    <link rel="stylesheet" href="./estilos/login.css">
 </head>
 <body>
-    <section class="web--container">        
+
+    <section data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" hidden id="loginForm" class="web_Contain_Login h-100 w-100 row d-flex container-fluid">
+
+        <aside class="web_Contain_Login--IMG-AsideLogin d-block h-100  col-4 container-fluid">
+    
+            <section class="web_Contain_Login--BG_BeforeImg h-100 w-100 p-3 container-fluid ">
+    
+                <div class="BG_BeforeImg--Contain-Aside w-100 ">
+                    <h1 class="text-center p-3 text-white brand_name">HaloGive!</h1>
+                </div>            
+        </aside>
+    
+    
+        <main class="web_Contain_Login--Body-LoginPage  col-8">
+            <section class="w-100 text-center p-2">
+                <h1>
+                    Bienvenido seas, porfavor ingresa con tus datos
+                </h1>
+            </section>
+    
+            <div class="web_Contain_Login--Body-Form-Container w-100 d-flex justify-content-center container-fluid">
+    
+                <section class="Form-Container__Borders p-4 m-5 d-block">
+                    <div class="d-flex w-100 text-center justify-content-center"><h1 class="text-center"><span class="L_of-Login text-center">L</span>ogin</h1></div>
+                
+                    <form action="" class="d-block w-100 justify-content-center p-3">
+                        <div class="p-3 d-flex justify-content-center inputs_Border">
+                            <input id="Email"   required  placeholder="Email" type="email">
+                        </div>
+                        <div class="p-3 d-flex justify-content-center inputs_Border">
+                            <input id="Password_login"  required placeholder="Password" type="password">
+                        </div>
+                        <div class="p-3 d-flex justify-content-center m-2">
+                            <input id="Check_Recuerdame" required type="checkbox">
+                            <label class="m-2" for="">Recuerdame</label>
+                        </div> 
+                        <div class="w-100 d-flex justify-content-center">
+                            <input id="submitButton" type="submit">
+                        </div>            
+
+                    </form>
+                    
+                </section>    
+            </div>
+    
+        </main>
+    </section>  
+
+    <!-- <section hidden id="Pantalla_De_Carga" class=" container-fluid h-100  Before__web--container d-block justify-content-center">
+        <figure hidden class="w-100 h-100 d-block justify-content-center h-100 container-fluid ">            
+            <img hidden class="img-fluid img_Imagen_Carga" src="./multimedia/imagenes/marcas/HaloGive.png" alt="">
+        </figure>        
+    </section> -->
+
+
+    <section data-aos="flip-left" id="Todo_El_Codigo" hidden class="web--container">        
         <header class="web-container__header d-flex  container-fluid">            
             <section class="web--container__nav-container container-fluid ">
                 <nav class="web--container__navbar navbar navbar-expand-lg navbar-light w-100">
@@ -338,15 +396,18 @@
             
         </footer>
         </section>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
         <!-- <script src="./javascript.js/main.js"></script> -->
         <script src="./javascript.js/donaciones_Dom.js"></script>
+
+        <script src="./javascript.js/login.js"></script>
+
         <!-- <script src="./javascript.js/main2.js"></script> -->
 </body>
 
