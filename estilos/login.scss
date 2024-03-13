@@ -1,28 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
-    
-    @import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Mono&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Mono&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Kanit:ital,wght@1,300&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Kanit:ital,wght@1,300&family=Train+One&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
-.web_Contain_Login{
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+;
+
+.web_Contain_Login {
     height: 1000px;
-};
+}
+
+;
 
 .web_Contain_Login--IMG-AsideLogin {
     background-image: url(../multimedia/imagenes/01-backgroung-letter.png);
@@ -31,18 +34,24 @@
     background-repeat: no-repeat;
     height: 1000px;
 
-};
+}
 
-.brand_name{
+;
+
+.brand_name {
     font-family: Train;
     letter-spacing: 0.10rem;
-};
+}
 
-.web_Contain_Login--BG_BeforeImg{
-    background:linear-gradient(to top, #39bda93e,  #3aa19132, #29938326, #206c612c, #22736735, #0d63562f, #0941382c, );
-};
+;
 
-.web_Contain_Login--Body-LoginPage{
+.web_Contain_Login--BG_BeforeImg {
+    background: linear-gradient(to top, #39bda93e, #3aa19132, #29938326, #206c612c, #22736735, #0d63562f, #0941382c, );
+}
+
+;
+
+.web_Contain_Login--Body-LoginPage {
     background-image: url(../multimedia/imagenes/couch.png);
     background-position: center;
     background-size: cover;
@@ -50,89 +59,110 @@
 }
 
 
-.Form-Container__Borders{
-    border: 0.25rem,  solid;
+.Form-Container__Borders {
+    border: 0.25rem, solid;
     width: 50%;
     box-shadow: 1rem 1rem rgba(0, 0, 0, 0.194);
     border-radius: 0.3rem;
     background-color: white
-};
+}
+
+;
 
 
 .Form-Container__Borders form {
-    display: flex; /* Utilizar flexbox */
-    justify-content: center; /* Alinear horizontalmente al centro */
-    align-items: center; /* Alinear verticalmente al centro */
-};
+    display: flex;
+    /* Utilizar flexbox */
+    justify-content: center;
+    /* Alinear horizontalmente al centro */
+    align-items: center;
+    /* Alinear verticalmente al centro */
+}
 
-.L_of-Login{
+;
+
+.L_of-Login {
     font-size: 30px;
     color: #39bda9;
-};
+}
 
-.inputs_Border{
+;
+
+.inputs_Border {
     border-radius: 2rem;
+}
+
+;
+
+.Before__web--container {
+    background-image: url(../multimedia/imagenes/bg-mj-222.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 };
 
-// .Before__web--container{
-//     background-image: url(../multimedia/imagenes/bg-mj-222.png);
-//     background-position: center;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-// };
 
-// .img_Imagen_Carga{
-//     width: 20rem ;
-//     height: 20rem ;
-//     margin: 8rem 30rem;
-//     animation: moveUpDown-1 0.8s ease-in-out infinite;
-//     box-shadow:   20px black;
-// };
 
-// @keyframes moveUpDown-1 {
-//     0% {
-//     transform: translateY(-10px);
-//     }
-//     50% {
-//     transform: translateY(10px);
-//     }
-//     100% {
-//     transform: translateY(-10px);
-//     }
-//     }
+.img_Imagen_Carga {
+    width: 20rem;
+    height: 20rem;
+    margin: 8rem 30rem;
+    animation: moveUpDown-1 0.8s ease-in-out infinite;
+    box-shadow: 20px black;
+}
 
-// @keyframes moveUpDown-2 {
-//     0% {
-//     transform: translateY(-80px);
-//     -webkit-transform: translateY(-80px);
-//     -moz-transform: translateY(-80px);
-//     -ms-transform: translateY(-80px);
-//     -o-transform: translateY(-80px);
-// }
-//     50% {
-//     transform: translateY(80px);
-//     -webkit-transform: translateY(80px);
-//     -moz-transform: translateY(80px);
-//     -ms-transform: translateY(80px);
-//     -o-transform: translateY(80px);
-// }
-//     100% {
-//     transform: translateY(-40px);
-//     -webkit-transform: translateY(-40px);
-//     -moz-transform: translateY(-40px);
-//     -ms-transform: translateY(-40px);
-//     -o-transform: translateY(-40px);
-// }
-//     }
+;
 
-//     @keyframes moveUpDown-3 {
-//         0% {
-//         transform: translateY(-80px);
-//         }
-//         50% {
-//         transform: translateY(80px);
-//         }
-//         100% {
-//         transform: translateY(-80px);
-//         }
-//         }
+@keyframes moveUpDown-1 {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes moveUpDown-2 {
+    0% {
+        transform: translateY(-80px);
+        -webkit-transform: translateY(-80px);
+        -moz-transform: translateY(-80px);
+        -ms-transform: translateY(-80px);
+        -o-transform: translateY(-80px);
+    }
+
+    50% {
+        transform: translateY(80px);
+        -webkit-transform: translateY(80px);
+        -moz-transform: translateY(80px);
+        -ms-transform: translateY(80px);
+        -o-transform: translateY(80px);
+    }
+
+    100% {
+        transform: translateY(-40px);
+        -webkit-transform: translateY(-40px);
+        -moz-transform: translateY(-40px);
+        -ms-transform: translateY(-40px);
+        -o-transform: translateY(-40px);
+    }
+}
+
+@keyframes moveUpDown-3 {
+    0% {
+        transform: translateY(-80px);
+    }
+
+    50% {
+        transform: translateY(80px);
+    }
+
+    100% {
+        transform: translateY(-80px);
+    }
+}

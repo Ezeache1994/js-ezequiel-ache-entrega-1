@@ -2,29 +2,72 @@ const submitButton = document.getElementById("submitButton");
 const loginForm = document.getElementById("loginForm");
 const contenidoSecreto = document.getElementById("Todo_El_Codigo");
 
+const carga=document.getElementById("Pantalla_De_Carga");
+
+const imagen_Cont= document.getElementById ("container_Imagen");
+const imagen= document.getElementById ("imagen_HG");
+
 submitButton.addEventListener("click", function(event) {
     event.preventDefault();
 
-    // Obtener los valores de los campos de entrada
     const correoValue = document.getElementById("Email").value.trim();
     const contrasenaValue = document.getElementById("Password_login").value.trim();
+    const recuerdameCheckbox = document.getElementById("Check_Recuerdame");
 
-    // Verificar si se ingresó un correo electrónico válido
     const correoValido = correoValue !== "" && correoValue.includes("@");
-
-    // Verificar si se ingresó una contraseña válida (al menos 1 caracter)
     const contrasenaValida = contrasenaValue.length >= 1;
 
-    // Si el correo y la contraseña son válidos, mostrar el contenido secreto
     if (correoValido && contrasenaValida) {
-        contenidoSecreto.removeAttribute("hidden");
+        if (recuerdameCheckbox.checked) {
+            // Guardar en sessionStorage
+            sessionStorage.setItem("email", correoValue);
+            sessionStorage.setItem("password", contrasenaValue);
+        } else {
+            // Guardar en localStorage
+            localStorage.setItem("email", correoValue);
+            localStorage.setItem("password", contrasenaValue);
+        }
+
         loginForm.remove();
+        carga.removeAttribute("hidden");
+
+
+setTimeout(() => {
+    carga.remove();
+    carga.setAttribute("hidden",true);
+
+}, 2000);
+
+setTimeout(()=>{
+    contenidoSecreto.removeAttribute("hidden");
+},2005)
+
+
+
 
     } else {
-        // Si no son válidos, mostrar un mensaje de alerta
         alert("Por favor, ingrese un correo electrónico válido y una contraseña con al menos 1 carácter.");
     }
 });
+
+// En otro script o parte del código donde se cargue el formulario (puede ser en la misma página o en otra)
+window.addEventListener("DOMContentLoaded", function() {
+    const emailInput = document.getElementById("Email");
+    const passwordInput = document.getElementById("Password_login");
+    const recuerdameCheckbox = document.getElementById("Check_Recuerdame");
+
+    // Verificar si hay datos guardados en localStorage o sessionStorage
+    const savedEmail = localStorage.getItem("email") || sessionStorage.getItem("email");
+    const savedPassword = localStorage.getItem("password") || sessionStorage.getItem("password");
+
+    if (savedEmail && savedPassword) {
+        emailInput.value = savedEmail;
+        passwordInput.value = savedPassword;
+        recuerdameCheckbox.checked = true; // Marcar el checkbox si se encontraron datos guardados
+    }
+});
+
+
 
 
 
