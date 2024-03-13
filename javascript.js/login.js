@@ -19,7 +19,7 @@ submitButton.addEventListener("click", function(event) {
     if (correoValido && contrasenaValida) {
         contenidoSecreto.removeAttribute("hidden");
         loginForm.remove();
-  
+
     } else {
         // Si no son válidos, mostrar un mensaje de alerta
         alert("Por favor, ingrese un correo electrónico válido y una contraseña con al menos 1 carácter.");
