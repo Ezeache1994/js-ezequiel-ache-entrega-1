@@ -44,18 +44,24 @@
                     <div class="d-flex w-100 text-center justify-content-center"><h1 class="text-center"><span class="L_of-Login text-center">L</span>ogin</h1></div>
                 
                     <form action="" class="d-block w-100 justify-content-center p-3">
-                        <div class="p-3 d-flex justify-content-center inputs_Border">
-                            <input id="Email"   required  placeholder="Email" type="email">
+                        <div class="p-3 d-flex justify-content-center inputs_Border p-2">
+
+                            <label class="fa-solid fa-at icono_Usuario m-2" for=""></label> <input id="Email" class="el_Mail"   required  placeholder="Email" type="email">
                         </div>
-                        <div class="p-3 d-flex justify-content-center inputs_Border">
-                            <input id="Password_login"  required placeholder="Password" type="password">
+                        <div class="p-3 d-flex justify-content-center inputs_Border p-2">
+                            <label class="fa-solid fa-unlock-keyhole m-2 contraseña-icono" for=""></label> <input id="Password_login" class=""  required placeholder="Password" type="password">
                         </div>
                         <div class="p-3 d-flex justify-content-center m-2">
                             <input id="Check_Recuerdame" required type="checkbox">
                             <label class="m-2" for="">Recuerdame</label>
                         </div> 
+
+                        <div hidden id="Mensaje_Negativo_Rojo" class="Mensaje_Negativo">
+                            <p class="text-danger">Por favor, ingrese un correo electrónico válido y una contraseña válida</p>
+                        </div>
+                        
                         <div class="w-100 d-flex justify-content-center">
-                            <input id="submitButton" type="submit">
+                            <input class="boton-login" id="submitButton" type="submit">
                         </div>            
 
                     </form>

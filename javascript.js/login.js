@@ -17,37 +17,37 @@ submitButton.addEventListener("click", function(event) {
     const correoValido = correoValue !== "" && correoValue.includes("@");
     const contrasenaValida = contrasenaValue.length >= 1;
 
+
+
     if (correoValido && contrasenaValida) {
         if (recuerdameCheckbox.checked) {
             // Guardar en sessionStorage
             sessionStorage.setItem("email", correoValue);
             sessionStorage.setItem("password", contrasenaValue);
+            document.getElementById("Mensaje_Negativo_Rojo").setAttribute("hidden", true);
         } else {
             // Guardar en localStorage
             localStorage.setItem("email", correoValue);
             localStorage.setItem("password", contrasenaValue);
+            document.getElementById("Mensaje_Negativo_Rojo").setAttribute("hidden", true);
         }
-
+    
         loginForm.remove();
         carga.removeAttribute("hidden");
-
-
-setTimeout(() => {
-    carga.remove();
-    carga.setAttribute("hidden",true);
-
-}, 2000);
-
-setTimeout(()=>{
-    contenidoSecreto.removeAttribute("hidden");
-},2005)
-
-
-
-
+    
+        setTimeout(() => {
+            carga.remove();
+            carga.setAttribute("hidden", true);
+        }, 2000);
+    
+        setTimeout(() => {
+            contenidoSecreto.removeAttribute("hidden");
+        }, 2005);
+    
     } else {
-        alert("Por favor, ingrese un correo electrónico válido y una contraseña con al menos 1 carácter.");
+        document.getElementById("Mensaje_Negativo_Rojo").removeAttribute("hidden");
     }
+    
 });
 
 // En otro script o parte del código donde se cargue el formulario (puede ser en la misma página o en otra)
