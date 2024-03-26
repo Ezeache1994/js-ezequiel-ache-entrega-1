@@ -1,3 +1,75 @@
+
+
+/*
+submitButton.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    const correoValue = document.getElementById("Email").value.trim();
+    const contrasenaValue = document.getElementById("Password_login").value.trim();
+    const recuerdameCheckbox = document.getElementById("Check_Recuerdame");
+
+    const correoValido = correoValue !== "" && correoValue.includes("@");
+    const contrasenaValida = contrasenaValue.length >= 1;
+
+    if (correoValido && contrasenaValida) {
+        fetch('URL_DEL_SERVIDOR/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                email: correoValue,
+                password: contrasenaValue
+            })
+        })
+        .then(response => {
+            if (response.ok) {
+                // Si la autenticación es exitosa
+                return response.json();
+            } else {
+                // Si hay un error en la autenticación
+                throw new Error('Error de autenticación');
+            }
+        })
+        .then(data => {
+            // Guardar datos de sesión si es necesario
+            if (recuerdameCheckbox.checked) {
+                sessionStorage.setItem("email", correoValue);
+                sessionStorage.setItem("password", contrasenaValue);
+            } else {
+                localStorage.setItem("email", correoValue);
+                localStorage.setItem("password", contrasenaValue);
+            }
+
+            // Ocultar mensaje de error si estaba visible
+            document.getElementById("Mensaje_Negativo_Rojo").setAttribute("hidden", true);
+
+            // Eliminar formulario y mostrar pantalla de carga
+            loginForm.remove();
+            carga.removeAttribute("hidden");
+
+            // Simular carga y mostrar contenido secreto después de un tiempo
+            setTimeout(() => {
+                carga.remove();
+                carga.setAttribute("hidden", true);
+                contenidoSecreto.removeAttribute("hidden");
+            }, 2005);
+        })
+        .catch(error => {
+            // Mostrar mensaje de error en caso de fallo en la autenticación
+            console.error('Error de autenticación:', error);
+            document.getElementById("Mensaje_Negativo_Rojo").removeAttribute("hidden");
+        });
+    } else {
+        // Mostrar mensaje de error si los campos no son válidos
+        document.getElementById("Mensaje_Negativo_Rojo").removeAttribute("hidden");
+    }
+});
+
+*/
+
+
+
 const submitButton = document.getElementById("submitButton");
 const loginForm = document.getElementById("loginForm");
 const contenidoSecreto = document.getElementById("Todo_El_Codigo");
@@ -66,53 +138,5 @@ window.addEventListener("DOMContentLoaded", function() {
         recuerdameCheckbox.checked = true; // Marcar el checkbox si se encontraron datos guardados
     }
 });
-
-
-
-
-
-
-/*
-document.addEventListener("DOMContentLoaded", function() {
-    const submitButton = document.getElementById("submitButton");
-    const loginForm = document.getElementById("loginForm");
-    const contenidoSecreto = document.getElementById("Todo_El_Codigo");
-    const pantallaDeCarga = document.getElementById("Pantalla_De_Carga");
-
-    submitButton.addEventListener("click", function(event) {
-        event.preventDefault();
-
-        const correoValue = document.getElementById("Email").value.trim();
-        const contrasenaValue = document.getElementById("Password_login").value.trim();
-
-        const correoValido = correoValue.includes("@");
-        const contrasenaValida = contrasenaValue.length >= 1;
-
-        if (correoValido && contrasenaValida) {
-            mostrarPantallaDeCarga(3000); // Mostrar pantalla de carga durante 3 segundos
-        } else {
-            alert("Por favor, ingrese un correo electrónico válido y una contraseña con al menos 1 carácter.");
-        }
-    });
-
-    function mostrarPantallaDeCarga(tiempo) {
-        loginForm.setAttribute("hidden", true); // Ocultar formulario de inicio de sesión
-        pantallaDeCarga.removeAttribute("hidden"); // Mostrar pantalla de carga
-        setTimeout(function() {
-            pantallaDeCarga.setAttribute("hidden", true); // Ocultar pantalla de carga después de 3 segundos
-            mostrarContenidoSecreto(); // Mostrar contenido secreto
-        }, tiempo);
-    }
-    function mostrarContenidoSecreto() {
-        contenidoSecreto.removeAttribute("hidden"); // Mostrar contenido secreto
-    }
-});
-
-
-*/
-
-
-
-
 
 

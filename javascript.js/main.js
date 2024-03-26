@@ -10,7 +10,7 @@
 
         // alert(`Para empezar haz click en el boton que dice invertir asi empezamos`);
 
-
+/*
 
         const botonClick = document.getElementById("btnInvertir");
         function simulacion() {
@@ -146,3 +146,4 @@
 
 document.querySelector(`#rubros__links__tecnologia`);
 
+*/

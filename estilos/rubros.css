@@ -1,0 +1,38 @@
+.caja {
+  width: 350px;
+  height: 368px;
+  background-color: yellow;
+  background-size: cover;
+  border: 15px rgb(253, 233, 12) solid;
+  padding: 50px;
+  margin: 100px;
+}
+
+img {
+  width: 300px;
+  height: 300px !important;
+  object-fit: cover;
+}
+
+.card {
+  margin-top: 8px;
+  padding: 1.3rem;
+  width: 100%;
+  height: 450px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card h3 {
+  text-transform: capitalize;
+}
+
+.card-action {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=rubros.css.map */
