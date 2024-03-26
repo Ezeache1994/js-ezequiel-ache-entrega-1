@@ -27,25 +27,24 @@
 
 
 
-// const la_Lista = document.getElementById("lista");
+ const la_Lista = document.getElementById("lista");
+ const Negocios2 = [
+     { id: 1, nombre: "Robotics Barracas anonymous corporation", volumen: "300 millones de pesos al año", img: "../multimedia/imagenes/tecnologia/Robotics_Barracas.png" },
+     { id: 2, nombre: "Rio de la Plata electric skates", volumen: "90 millones de pesos al año", img: "../multimedia/imagenes/tecnologia/Rio_de_la_Plata_electric_skates.png" },
+     { id: 3, nombre: "Desarrollo Nacional Del Videojuego", volumen: "60 millones de pesos al año", img: "../multimedia/imagenes/tecnologia/Desarrollo_Nacional_Del_Videojuego.png" },
+ ];
 
-// const Negocios2 = [
-//     { id: 1, nombre: "Robotics Barracas anonymous corporation", volumen: "300 millones de pesos al año", img: "../multimedia/imagenes/tecnologia/Robotics_Barracas.png" },
-
-//     { id: 2, nombre: "Rio de la Plata electric skates", volumen: "90 millones de pesos al año", img: "../multimedia/imagenes/tecnologia/Rio_de_la_Plata_electric_skates.png" },
-
-//     { id: 3, nombre: "Desarrollo Nacional Del Videojuego", volumen: "60 millones de pesos al año", img: "../multimedia/imagenes/tecnologia/Desarrollo_Nacional_Del_Videojuego.png" },
-// ];
+ console.log(Negocios2);
 
 
 //DATOS LOCALES
 
-fetch("../db/db.json") 
-.then(response=>response.json())
-.then(data=>{
-    const {Negocios2}=data;
-    console.log(Negocios2);
-});
+ fetch("../db/db.json") 
+ .then(response=>response.json())
+ .then(data=>{
+     const {Negocios2}=data;
+     console.log(Negocios2);
+ });
 
 
 
