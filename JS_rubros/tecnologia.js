@@ -48,6 +48,7 @@ const getData = async (url) => {
 };
 
 const Api_Url = "../db/db.json";
+console.log(Api_Url);
 getData(Api_Url);
 
 
