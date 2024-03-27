@@ -6,12 +6,14 @@
       "volumen": "300 millones de pesos al año",
       "img": "../multimedia/imagenes/tecnologia/Robotics_Barracas.png"
     },
+
     {
       "id": 2,
       "nombre": "Rio de la Plata electric skates",
       "volumen": "90 millones de pesos al año",
       "img": "../multimedia/imagenes/tecnologia/Rio_de_la_Plata_electric_skates.png"
     },
+    
     {
       "id": 3,
       "nombre": "Desarrollo Nacional Del Videojuego",
