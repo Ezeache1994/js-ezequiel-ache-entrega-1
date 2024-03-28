@@ -34,3 +34,26 @@
   .card-action {
     max-width: 100%;
   }
+
+
+
+
+  .boton_fetch{
+    background-color: #4A976E;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    font-family: Anton;
+    letter-spacing: 0.2rem;
+    transition: 2s
+  };
+
+  .boton_fetch:hover{
+    background-color: white;
+    padding: 0.5rem;
+    color:  #4A976E ;
+    border-radius: 0.5rem;
+    font-family: Anton;
+    letter-spacing: 0.2rem;
+    transition: 3s
+  };
