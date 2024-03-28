@@ -27,7 +27,7 @@ function mostrar_en_HTML(negocios) {
             <figure class="Para_Imagen">
                 <img src="${negocio.img}" alt="${negocio.nombre}">
             </figure>
-            <div class="La_Descripcion descripcion">
+            <div class="La_Descripcion">
                 <p>${negocio.Descripcion}</p>
             </div>
         `;
