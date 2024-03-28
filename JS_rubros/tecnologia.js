@@ -34,7 +34,10 @@ function mostrar_en_HTML(negocios) {
 
         contenedor1.appendChild(nuevoContenido);
     }
-}
+};
+
+
+
 
 const getData = async (url) => {
     try {
