@@ -67,8 +67,8 @@ const Boton3_juego = document.getElementById("Videojuego");
 
 const Negocios2 = [
     { id: 1, nombre: "Robotics Barracas anonymous corporation", volumen: "300 millones de pesos al año", img: "../multimedia/imagenes/tecnologia/Robotics_Barracas.png", Descripcion: "Negocio de robótica que desarrolla prótesis robóticas para humanos" },
-    { id: 2, nombre: "Rio de la Plata electric skates", volumen: "90 millones de pesos al año", img: "../multimedia/imagenes/tecnologia/Rio_de_la_Plata_electric_skates.png", Descripcion: "Empresa Argentina que fabrica patines y patinetas que se movilizan de manera autónoma con energía solar" },
-    { id: 3, nombre: "Desarrollo Nacional Del Videojuego", volumen: "60 millones de pesos al año", img: "../multimedia/imagenes/tecnologia/Desarrollo_Nacional_Del_Videojuego.png", Descripcion: "Empresa Cordobesa de desarrollo de videojuegos para niños ciegos y inválidos" }
+    { id: 2, nombre: "Rio de la Plata electric skates Argentinian S.A", volumen: "90 millones de pesos al año", img: "../multimedia/imagenes/tecnologia/Rio_de_la_Plata_electric_skates.png", Descripcion: "Empresa Argentina que fabrica patines y patinetas que se movilizan de manera autónoma con energía solar" },
+    { id: 3, nombre: "Desarrollo Nacional Del Videojuego", volumen: "60 millones de pesos al año", img: "../multimedia/imagenes/tecnologia/niños_dev.png", Descripcion: "Empresa Cordobesa de desarrollo de videojuegos para niños ciegos y inválidos" }
 ];
 
 function mostrar_en_HTML(negocios) {
@@ -78,16 +78,16 @@ function mostrar_en_HTML(negocios) {
 
         nuevoContenido.innerHTML = `
             <div class="para_El_H2">
-                <h2>${negocio.nombre}</h2>
-                <h6>${negocio.volumen}</h6>
+                <h2 class="text-center">${negocio.nombre}</h2>
+                <h6 class="text-center">${negocio.volumen}</h6>
             </div>
 
-            <figure class="Para_Imagen">
+            <figure class="Para_Imagen text-center">
                 <img src="${negocio.img}" alt="${negocio.nombre}">
             </figure>
 
             <div class="La_Descripcion">
-                <p>${negocio.Descripcion}</p>
+                <p  class="p-2 text-center" >${negocio.Descripcion}</p>
             </div>
         `;
 
@@ -95,9 +95,9 @@ function mostrar_en_HTML(negocios) {
     }
 }
 
-// Boton1_Robot.addEventListener("click", () => mostrar_en_HTML([Negocios2[0]]));
-// Boton2_Skate.addEventListener("click", () => mostrar_en_HTML([Negocios2[1]]));
-// Boton3_juego.addEventListener("click", () => mostrar_en_HTML([Negocios2[2]]));
+ Boton1_Robot.addEventListener("click", () => mostrar_en_HTML([Negocios2[0]]));
+ Boton2_Skate.addEventListener("click", () => mostrar_en_HTML([Negocios2[1]]));
+ Boton3_juego.addEventListener("click", () => mostrar_en_HTML([Negocios2[2]]));
 
 
 
