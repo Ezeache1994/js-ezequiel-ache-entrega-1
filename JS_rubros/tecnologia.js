@@ -65,6 +65,12 @@ const Boton1_Robot = document.getElementById("Robotics");
 const Boton2_Skate = document.getElementById("electric_skates");
 const Boton3_juego = document.getElementById("Videojuego");
 
+const Negocios2 = [
+    { id: 1, nombre: "Robotics Barracas anonymous corporation", volumen: "300 millones de pesos al año", img: "../multimedia/imagenes/tecnologia/Robotics_Barracas.png", Descripcion: "Negocio de robótica que desarrolla prótesis robóticas para humanos" },
+    { id: 2, nombre: "Rio de la Plata electric skates", volumen: "90 millones de pesos al año", img: "../multimedia/imagenes/tecnologia/Rio_de_la_Plata_electric_skates.png", Descripcion: "Empresa Argentina que fabrica patines y patinetas que se movilizan de manera autónoma con energía solar" },
+    { id: 3, nombre: "Desarrollo Nacional Del Videojuego", volumen: "60 millones de pesos al año", img: "../multimedia/imagenes/tecnologia/Desarrollo_Nacional_Del_Videojuego.png", Descripcion: "Empresa Cordobesa de desarrollo de videojuegos para niños ciegos y inválidos" }
+];
+
 function mostrar_en_HTML(negocios) {
     for (const negocio of negocios) {
         const nuevoContenido = document.createElement("div");
@@ -88,6 +94,13 @@ function mostrar_en_HTML(negocios) {
         contenedor1.appendChild(nuevoContenido);
     }
 }
+
+// Boton1_Robot.addEventListener("click", () => mostrar_en_HTML([Negocios2[0]]));
+// Boton2_Skate.addEventListener("click", () => mostrar_en_HTML([Negocios2[1]]));
+// Boton3_juego.addEventListener("click", () => mostrar_en_HTML([Negocios2[2]]));
+
+
+
 
 const getData = async (url) => {
     try {
