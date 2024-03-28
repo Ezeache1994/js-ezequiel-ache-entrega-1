@@ -95,9 +95,7 @@ function mostrar_en_HTML(negocios) {
     }
 }
 
- Boton1_Robot.addEventListener("click", () => mostrar_en_HTML([Negocios2[0]]));
- Boton2_Skate.addEventListener("click", () => mostrar_en_HTML([Negocios2[1]]));
- Boton3_juego.addEventListener("click", () => mostrar_en_HTML([Negocios2[2]]));
+
 
 
 
