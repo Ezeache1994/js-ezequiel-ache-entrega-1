@@ -68,8 +68,6 @@ Simulacion_De_Datos = () => {
                         if (this.Rubros.includes(Inputs_Seleccionar_Rubro)) {
                             const rubroSeleccionado = Inputs_Seleccionar_Rubro;
 
-                            alert(`Haz seleccionado el rubro ${rubroSeleccionado}`);
-
                             this.seleccionarNegocios(rubroSeleccionado);
 
                             sessionStorage.setItem("Rubro Seleccionado", `el rubro escogido es: ` + rubroSeleccionado)
@@ -77,7 +75,7 @@ Simulacion_De_Datos = () => {
                             const dato_Rubro_Retornado_HTML = document.getElementById("Dato_Rubro_Seleccionado");
 
                         } else {
-                            alert("Rubro inválido. Por favor, seleccione un rubro válido.");
+                            swal("Error!", "...Escoge un rubro valido!");
                         };
                     });
                 }
@@ -140,6 +138,7 @@ Simulacion_De_Datos = () => {
                             document.getElementById("Dato_Rubro_Seleccionado").textContent = sessionStorage.getItem("Rubro Seleccionado");
                             document.getElementById("Datos_Negocio_Seleccionado").textContent = negocioEscogido;
 
+                            swal("Muchas Gracias!", "La Simulacion ha Finalizado!", "success");
                             Gracais.removeAttribute("hidden");
                             BackGround.removeAttribute("hidden");
 
